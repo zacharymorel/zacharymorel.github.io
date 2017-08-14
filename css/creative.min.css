@@ -76,9 +76,38 @@ img::-moz-selection {
   color: #fff;
   background: 0 0;
 }
+div.container-about {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: inherit;
+}
 .imageOfMe {
   border-radius: 50%;
-  width: 35%;
+  width: auto;
+}
+div.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.rowTwo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.section-heading .flex .text-white {
+  width: 70%;
+  height: 20%;
+}
+.aboutText {
+  width: 85%;
+  height: 40%;
+}
+.skillsBtn {
+  display: flex;
+  align-self: center;
+  text-align: -webkit-right;
 }
 
 body {
