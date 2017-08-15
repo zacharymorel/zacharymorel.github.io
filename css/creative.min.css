@@ -482,7 +482,13 @@ fieldset[disabled] .btn-primary:hover {
     border-radius: 50%;
     width: 60%;
     height: 60%;
+    margin-bottom: 10px;
   }
+  h2.flex {
+    font-size: 30px;
+    margin: 20px;
+  }
+  /*Here I left off*/
 }
 
 /**/
