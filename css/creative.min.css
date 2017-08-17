@@ -105,7 +105,6 @@ div.row {
   height: 40%;
 }
 .skillsBtn {
-  display: flex;
   align-self: center;
   text-align: -webkit-right;
 }
@@ -474,9 +473,12 @@ fieldset[disabled] .btn-primary:hover {
   div.row,
   div.rowTwo {
     display: flex;
+    display: -webkit-flex;
+    display: -ms-flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
+    padding-bottom: 3em;
   }
   .imageOfMe {
     border-radius: 50%;
