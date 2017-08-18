@@ -52,6 +52,13 @@ p {
 .text-faded {
   color: rgba(255, 255, 255, .7);
 }
+.fa-4x {
+  font-size: 5em;
+}
+.fa.fa-4x.colored.node {
+  font-size: 7em;
+}
+
 section {
   padding: 100px 0;
 }
