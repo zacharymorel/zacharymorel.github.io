@@ -58,7 +58,16 @@ p {
 .fa.fa-4x.colored.node {
   font-size: 7em;
 }
-
+.fa-4x.fa-linkedin {
+  font-size: 3em;
+}
+.devicon-github-plain {
+  font-size: 3em;
+}
+div.contact {
+  display: flex;
+  flex-direction: column;
+}
 section {
   padding: 100px 0;
 }
