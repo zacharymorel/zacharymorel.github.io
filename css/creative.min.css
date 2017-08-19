@@ -55,6 +55,10 @@ p {
 .fa-4x {
   font-size: 5em;
 }
+.fa.fa-phone.fa-3x.sr-contact.hover {
+  width: 14%;
+  align-self: center;
+}
 .fa.fa-4x.colored.node {
   font-size: 7em;
 }
@@ -63,6 +67,9 @@ p {
 }
 .devicon-github-plain {
   font-size: 3em;
+}
+i.hover:hover {
+  background-color: gold;
 }
 div.contact {
   display: flex;
@@ -122,6 +129,13 @@ div.row {
 .skillsBtn {
   align-self: center;
   text-align: -webkit-right;
+}
+
+.col-lg-4.mr-auto.text-center,
+.col-lg-4.ml-auto.text-center {
+  max-width: 25%;
+  padding: 0;
+  margin: 0;
 }
 
 body {
@@ -504,7 +518,12 @@ fieldset[disabled] .btn-primary:hover {
     font-size: 30px;
     margin: 20px;
   }
-  /*Here I left off*/
+  .col-lg-4.mr-auto.text-center,
+  .col-lg-4.ml-auto.text-center {
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+  }
 }
 
 /**/
