@@ -52,6 +52,9 @@ p {
 .text-faded {
   color: rgba(255, 255, 255, .7);
 }
+i.fa.fa-4x:hover {
+  opacity: 0.50;
+}
 .fa-4x {
   font-size: 5em;
 }
@@ -69,6 +72,12 @@ p {
   font-size: 3em;
 }
 i.hover:hover {
+  background-color: gold;
+}
+i.fa.fa-4x.devicon-github-plain.colored.hover:hover {
+  background-color: gold;
+}
+i.fa.fa-4x.fa-linkedin.hover:hover {
   background-color: gold;
 }
 div.contact {
