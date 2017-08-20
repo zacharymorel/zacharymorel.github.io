@@ -53,7 +53,7 @@
             <a class="nav-link" href="#about">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#services">Skills</a>
+            <a class="nav-link" href="#skills">Skills</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#portfolio">Portfolio</a>
@@ -64,7 +64,6 @@
         </ul>
       </div>
     </nav>
-<!-- change #Services tags and css to match skills?? -->
     <header class="masthead">
       <div class="header-content">
         <div class="header-content-inner">
@@ -86,12 +85,12 @@
         <div class="rowTwo">
             <h2 class="section-heading flex text-white">Hi, my name is Zachary Morel!</h2>
             <p class="text-faded aboutText">I'm a passionate problem solver, nerd enthusiast, dad of two, lover of craft beer and recently, mad software developer.  I’ve spent the last 5 years working as a craftsman with wood. I decided to make a career change and went to the Iron Yard immersive web development bootcamp. </p>
-            <a class="btn btn-default btn-xl sr-button skillsBtn" href="#services">Skills!</a>
+            <a class="btn btn-default btn-xl sr-button skillsBtn" href="#skills">Skills!</a>
         </div>
       </div>
     </section>
 
-    <section id="services">
+    <section id="skills">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
@@ -103,43 +102,43 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-3 col-md-6 text-center">
-            <div class="service-box" data-name="Javascript">
-              <i class="fa fa-4x devicon-javascript-plain colored"></i>
+            <div class="skills-box">
+              <i class="fa fa-4x devicon-javascript-plain colored hoverSkills" data-type="Javascript"></i>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 text-center">
-            <div class="service-box">
-              <i class="fa fa-4x devicon-nodejs-plain-wordmark colored node"></i>
+            <div class="skills-box">
+              <i class="fa fa-4x devicon-nodejs-plain-wordmark colored node hoverSkills" data-type="NodeJs"></i>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 text-center">
-            <div class="service-box">
-              <i class="fa fa-4x devicon-html5-plain colored"></i>
+            <div class="skills-box">
+              <i class="fa fa-4x devicon-html5-plain colored hoverSkills" data-type="HTML5"></i>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 text-center">
-            <div class="service-box">
-              <i class="fa fa-4x devicon-css3-plain colored"></i>
+            <div class="skills-box">
+              <i class="fa fa-4x devicon-css3-plain colored hoverSkills" data-type="HTML5"></i>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 text-center">
-            <div class="service-box">
-              <i class="fa fa-4x devicon-postgresql-plain-wordmark colored"></i>
+            <div class="skills-box">
+              <i class="fa fa-4x devicon-postgresql-plain-wordmark colored hoverSkills" data-type="PostGresSQL"></i>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 text-center">
-            <div class="service-box">
-              <i class="fa fa-4x devicon-mongodb-plain-wordmark colored"></i>
+            <div class="skills-box">
+              <i class="fa fa-4x devicon-mongodb-plain-wordmark colored hoverSkills" data-type="MongoDB"></i>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 text-center">
-            <div class="service-box">
-              <i class="fa fa-4x devicon-git-plain-wordmark colored"></i>
+            <div class="skills-box">
+              <i class="fa fa-4x devicon-git-plain-wordmark colored hoverSkills" data-type="MongoDB"></i>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 text-center">
-            <div class="service-box">
-                <i class="fa fa-4x devicon-github-plain-wordmark colored"></i>
+            <div class="skills-box">
+                <i class="fa fa-4x devicon-github-plain-wordmark colored hoverSkills" data-type="Github"></i>
             </div>
           </div>
         </div>
@@ -269,6 +268,7 @@
       </div>
     </section>
 
+
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/popper/popper.min.js"></script>
@@ -282,6 +282,12 @@
     <!-- Custom scripts for this template -->
     <script src="js/creative.min.js"></script>
 
+    <script type="text/javascript">
+    $('.hoverSkills').hover(function() {
+  let skillId = $(this).attr('data-type')
+  alert(skillId)
+})
+</script>
   </body>
 
 </html>

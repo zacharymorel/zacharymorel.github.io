@@ -298,16 +298,16 @@ header.masthead .header-content .header-content-inner p {
     margin-left: auto;
   }
 }
-.service-box {
+.skills-box {
   max-width: 400px;
   margin: 50px auto 0;
 }
 @media (min-width: 992px) {
-  .service-box {
+  .skills-box {
     margin: 20px auto 0;
   }
 }
-.service-box p {
+.skills-box p {
   margin-bottom: 0;
 }
 .portfolio-box {
