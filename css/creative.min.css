@@ -49,6 +49,12 @@ p {
   color: #fff;
   background-color: #222 !important;
 }
+.fullState {
+  cursor: pointer;
+  display: none;
+  /*Here I left off*/
+}
+
 .text-faded {
   color: rgba(255, 255, 255, .7);
 }

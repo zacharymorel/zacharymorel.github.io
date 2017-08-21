@@ -103,42 +103,42 @@
         <div class="row">
           <div class="col-lg-3 col-md-6 text-center">
             <div class="skills-box">
-              <i class="fa fa-4x devicon-javascript-plain colored hoverSkills" data-type="Javascript"></i>
+              <i class="fa fa-4x devicon-javascript-plain colored hoverSkills" data-type="Javascript"><p class="fullState">Javascript</p></i>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 text-center">
             <div class="skills-box">
-              <i class="fa fa-4x devicon-nodejs-plain-wordmark colored node hoverSkills" data-type="NodeJs"></i>
+              <i class="fa fa-4x devicon-nodejs-plain-wordmark colored node hoverSkills" data-type="NodeJs"><p class="fullState">NodeJs</p></i>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 text-center">
             <div class="skills-box">
-              <i class="fa fa-4x devicon-html5-plain colored hoverSkills" data-type="HTML5"></i>
+              <i class="fa fa-4x devicon-html5-plain colored hoverSkills" data-type="HTML5"><p class="fullState">HTML5</p></i>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 text-center">
             <div class="skills-box">
-              <i class="fa fa-4x devicon-css3-plain colored hoverSkills" data-type="HTML5"></i>
+              <i class="fa fa-4x devicon-css3-plain colored hoverSkills" data-type="CSS3"><p class="fullState">CSS3</p></i>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 text-center">
             <div class="skills-box">
-              <i class="fa fa-4x devicon-postgresql-plain-wordmark colored hoverSkills" data-type="PostGresSQL"></i>
+              <i class="fa fa-4x devicon-postgresql-plain-wordmark colored hoverSkills" data-type="PostGresSQL"><p class="fullState">PostGresSQL</p></i>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 text-center">
             <div class="skills-box">
-              <i class="fa fa-4x devicon-mongodb-plain-wordmark colored hoverSkills" data-type="MongoDB"></i>
+              <i class="fa fa-4x devicon-mongodb-plain-wordmark colored hoverSkills" data-type="MongoDB"><p class="fullState">MongoDB</p></i>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 text-center">
             <div class="skills-box">
-              <i class="fa fa-4x devicon-git-plain-wordmark colored hoverSkills" data-type="MongoDB"></i>
+              <i class="fa fa-4x devicon-git-plain-wordmark colored hoverSkills" data-type="Git"><p class="fullState">Git</p></i>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 text-center">
             <div class="skills-box">
-                <i class="fa fa-4x devicon-github-plain-wordmark colored hoverSkills" data-type="Github"></i>
+                <i class="fa fa-4x devicon-github-plain-wordmark colored hoverSkills" data-type="Github"><p class="fullState">GitHub</p></i>
             </div>
           </div>
         </div>
@@ -284,9 +284,9 @@
 
     <script type="text/javascript">
     $('.hoverSkills').hover(function() {
-  let skillId = $(this).attr('data-type')
-  alert(skillId)
+  $('.fullState', this).slideToggle(100, 'linear').css('display', 'block')
 })
+// Display is LInear, needss to be Block to render underneath or change span to Paragraph.
 </script>
   </body>
 
