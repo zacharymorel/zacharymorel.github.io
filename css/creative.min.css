@@ -52,7 +52,7 @@ p {
 .fullState {
   cursor: pointer;
   display: none;
-  /*Here I left off*/
+  color: black;
 }
 
 .text-faded {
@@ -508,7 +508,7 @@ fieldset[disabled] .btn-primary:hover {
   padding: 15px 30px;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 450px) {
   div.container-about {
     display: flex;
     flex-direction: column;
