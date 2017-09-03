@@ -9,7 +9,7 @@ html {
   height: 100%;
 }
 body {
-  font-family: Merriweather, 'Helvetica Neue', Arial, sans-serif;
+  font-family: Merriweather, "Helvetica Neue", Arial, sans-serif;
 }
 hr {
   max-width: 50px;
@@ -21,9 +21,9 @@ hr.light {
 }
 a {
   color: #f05f40;
-  -webkit-transition: all .2s;
-  -moz-transition: all .2s;
-  transition: all .2s;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s;
 }
 a:focus,
 a:hover {
@@ -35,7 +35,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif;
 }
 p {
   font-size: 16px;
@@ -56,10 +56,10 @@ p {
 }
 
 .text-faded {
-  color: rgba(255, 255, 255, .7);
+  color: rgba(255, 255, 255, 0.7);
 }
 i.fa.fa-4x:hover {
-  opacity: 0.50;
+  opacity: 0.5;
 }
 .fa-4x {
   font-size: 5em;
@@ -157,18 +157,18 @@ body {
   -webkit-tap-highlight-color: #222;
 }
 #mainNav {
-  border-color: rgba(34, 34, 34, .05);
+  border-color: rgba(34, 34, 34, 0.05);
   background-color: #fff;
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
-  -webkit-transition: all .2s;
-  -moz-transition: all .2s;
-  transition: all .2s;
+  font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s;
 }
 #mainNav .navbar-brand {
   font-weight: 700;
   text-transform: uppercase;
   color: #f05f40;
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif;
 }
 #mainNav .navbar-brand:focus,
 #mainNav .navbar-brand:hover {
@@ -202,11 +202,11 @@ body {
 }
 @media (min-width: 992px) {
   #mainNav {
-    border-color: rgba(255, 255, 255, .3);
+    border-color: rgba(255, 255, 255, 0.3);
     background-color: transparent;
   }
   #mainNav .navbar-brand {
-    color: rgba(255, 255, 255, .7);
+    color: rgba(255, 255, 255, 0.7);
   }
   #mainNav .navbar-brand:focus,
   #mainNav .navbar-brand:hover {
@@ -214,14 +214,14 @@ body {
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link,
   #mainNav .navbar-nav > li.nav-item > a.nav-link:focus {
-    color: rgba(255, 255, 255, .7);
+    color: rgba(255, 255, 255, 0.7);
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link:focus:hover,
   #mainNav .navbar-nav > li.nav-item > a.nav-link:hover {
     color: #fff;
   }
   #mainNav.navbar-shrink {
-    border-color: rgba(34, 34, 34, .05);
+    border-color: rgba(34, 34, 34, 0.05);
     background-color: #fff;
   }
   #mainNav.navbar-shrink .navbar-brand {
@@ -274,7 +274,7 @@ header.masthead .header-content .header-content-inner p {
   font-size: 16px;
   font-weight: 300;
   margin-bottom: 50px;
-  color: rgba(255, 255, 255, .7);
+  color: rgba(255, 255, 255, 0.7);
 }
 @media (min-width: 768px) {
   header.masthead {
@@ -331,10 +331,10 @@ header.masthead .header-content .header-content-inner p {
   text-align: center;
   opacity: 0;
   color: #fff;
-  background: rgba(240, 95, 64, .9);
-  -webkit-transition: all .2s;
-  -moz-transition: all .2s;
-  transition: all .2s;
+  background: rgba(240, 95, 64, 0.9);
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s;
 }
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content {
   position: absolute;
@@ -343,17 +343,29 @@ header.masthead .header-content .header-content-inner p {
   transform: translateY(-50%);
   text-align: center;
 }
-.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category,
-.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
+.portfolio-box
+  .portfolio-box-caption
+  .portfolio-box-caption-content
+  .project-category,
+.portfolio-box
+  .portfolio-box-caption
+  .portfolio-box-caption-content
+  .project-name {
   padding: 0 15px;
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif;
 }
-.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
+.portfolio-box
+  .portfolio-box-caption
+  .portfolio-box-caption-content
+  .project-category {
   font-size: 14px;
   font-weight: 600;
   text-transform: uppercase;
 }
-.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
+.portfolio-box
+  .portfolio-box-caption
+  .portfolio-box-caption-content
+  .project-name {
   font-size: 18px;
 }
 .portfolio-box:hover .portfolio-box-caption {
@@ -363,10 +375,16 @@ header.masthead .header-content .header-content-inner p {
   outline: 0;
 }
 @media (min-width: 768px) {
-  .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
+  .portfolio-box
+    .portfolio-box-caption
+    .portfolio-box-caption-content
+    .project-category {
     font-size: 16px;
   }
-  .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
+  .portfolio-box
+    .portfolio-box-caption
+    .portfolio-box-caption-content
+    .project-name {
     font-size: 22px;
   }
 }
@@ -379,7 +397,7 @@ header.masthead .header-content .header-content-inner p {
 .text-primary {
   color: #f05f40 !important;
 }
-.no-gutter > [class*=col-] {
+.no-gutter > [class*="col-"] {
   padding-right: 0;
   padding-left: 0;
 }
@@ -502,7 +520,7 @@ fieldset[disabled] .btn-primary:hover {
   text-transform: uppercase;
   border: none;
   border-radius: 300px;
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif;
 }
 .btn-xl {
   padding: 15px 30px;
@@ -540,5 +558,3 @@ fieldset[disabled] .btn-primary:hover {
     margin: 0;
   }
 }
-
-/**/
