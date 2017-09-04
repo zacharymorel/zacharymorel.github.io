@@ -101,7 +101,7 @@ hr {
 
 .fullState {
   cursor: pointer;
-  display: none;
+  display: none !important;
   color: #2A2A2A;
   font-size: .45em;
 }
