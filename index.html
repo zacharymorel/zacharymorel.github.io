@@ -20,8 +20,8 @@
   <!-- Custom styles for this template -->
   <link href="css/landing-page.css" rel="stylesheet">
 
-   <!-- Programming Languages Icons -->
-   <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+  <!-- Programming Languages Icons -->
+  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 
 </head>
 
@@ -224,26 +224,26 @@
 
   </section>
   <!-- /.content-section-a -->
-
+  <hr>
   <section class="skills">
 
     <div class="container">
 
       <div>
-          <h3 class="skillsHthree">Skills</h3>
-          <ul class="skillsUl">
-            <li class="skillsLi"><i class="devicon-nodejs-plain colored skillsItag"></i></li>
-            <li class="skillsLi"><i class="devicon-javascript-plain colored skillsItag"></i></li>
-            <li class="skillsLi"><i class="devicon-html5-plain colored skillsItag"></i></li>
-            <li class="skillsLi"><i class="devicon-css3-plain colored skillsItag"></i></li>
-            <li class="skillsLi"><i class="devicon-express-original colored skillsItag"></i></li>
-            <li class="skillsLi"><i class="devicon-postgresql-plain colored skillsItag"></i></li>
-            <li class="skillsLi"><i class="devicon-sequelize-plain colored skillsItag"></i></li>
-            <li class="skillsLi"><i class="devicon-mongodb-plain colored skillsItag"></i></li>
-            <li class="skillsLi"><i class="devicon-heroku-original colored skillsItag"></i></li>
-            <li class="skillsLi"><i class="devicon-git-plain colored skillsItag"></i></li>
-            <li class="skillsLi"><i class="devicon-github-plain colored skillsItag"></i></li>
-          </ul>
+        <h3 class="skillsHthree">Skills</h3>
+        <ul class="skillsUl">
+          <li class="skillsLi"><i class="devicon-nodejs-plain colored skillsItag" data-type="NodeJs"><p class="fullState">NodeJs</p></i></li>
+          <li class="skillsLi"><i class="devicon-javascript-plain colored skillsItag" data-type="JavaScript"><p class="fullState">JavaScript</p></i></li>
+          <li class="skillsLi"><i class="devicon-html5-plain colored skillsItag" data-type="HTML5"><p class="fullState">HTML5</p></i></li>
+          <li class="skillsLi"><i class="devicon-css3-plain colored skillsItag" data-type="CSS3"><p class="fullState">CSS3</p></i></li>
+          <li class="skillsLi"><i class="devicon-express-original colored skillsItag" data-type="Express"><p class="fullState">Express</p></i></li>
+          <li class="skillsLi"><i class="devicon-postgresql-plain colored skillsItag" data-type="PostGresSQL"><p class="fullState">PostGresSQL</p></i></li>
+          <li class="skillsLi"><i class="devicon-mongodb-plain colored skillsItag" data-type="MongoDB"><p class="fullState">MongoDB</p></i></li>
+          <li class="skillsLi"><i class="devicon-sequelize-plain colored skillsItag" data-type="Sequelize"><p class="fullState">Sequelize</p></i></li>
+          <li class="skillsLi"><i class="devicon-heroku-original colored skillsItag" data-type="Heroku"><p class="fullState">Heroku</p></i></li>
+          <li class="skillsLi"><i class="devicon-git-plain colored skillsItag" data-type="Git"><p class="fullState">Git</p></i></li>
+          <li class="skillsLi"><i class="devicon-github-plain colored skillsItag" data-type="GitHub"><p class="fullState">GitHub</p></i></li>
+        </ul>
       </div>
 
     </div>
@@ -298,6 +298,12 @@
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/popper/popper.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+  <script type="text/javascript">
+    $('.skillsItag').hover(function() {
+  $('.fullState', this).slideToggle(100, 'linear').css('display', 'block')
+})
+// Display is LInear, needss to be Block to render underneath or change span to Paragraph.
+</script>
 
 </body>
 
