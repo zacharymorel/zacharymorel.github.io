@@ -64,6 +64,33 @@ body, h1, h2, h3, h4, h5, h6 {
   background-color: brown;
 }
 
+.skills {
+  margin: 0;
+}
+
+.skillsHthree {
+  text-align: center;
+}
+.skillsUl{
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 0;
+}
+
+.skillsLi {
+  height: 25%;
+  width: 25%;
+  position: relative;
+}
+
+.skillsItag{
+  font-size: 40px;
+}
+
 @media(max-width:767px) {
   .intro-message {
     padding-bottom: 15%;

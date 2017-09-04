@@ -20,6 +20,9 @@
   <!-- Custom styles for this template -->
   <link href="css/landing-page.css" rel="stylesheet">
 
+   <!-- Programming Languages Icons -->
+   <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+
 </head>
 
 <body>
@@ -35,13 +38,13 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
+            <a class="nav-link" href="#About">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Portfolio</a>
+            <a class="nav-link" href="#Portfolio">Portfolio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" href="#Contact">Contact</a>
           </li>
         </ul>
       </div>
@@ -92,7 +95,7 @@
         <div class="col-lg-5 mr-auto order-lg-2">
           <hr class="section-heading-spacer">
           <div class="clearfix"></div>
-          <h2 class="section-heading">About<br>Me</h2>
+          <h2 class="section-heading" id="About">About<br>Me</h2>
           <p class="lead">I'm a passionate problem solver, nerd enthusiast, dad of two, lover of craft beer and recently, mad software developer.
             I’ve spent the last 5 years working as a craftsman with wood. I decided to make a career change and went to the
             Iron Yard immersive web development bootcamp.</p>
@@ -107,7 +110,7 @@
   </section>
 
   <!-- Page Content -->
-  <section class="content-section-a">
+  <section class="content-section-a" id="Portfolio">
 
     <div class="container">
       <div class="row">
@@ -222,7 +225,33 @@
   </section>
   <!-- /.content-section-a -->
 
-  <footer class="banner">
+  <section class="skills">
+
+    <div class="container">
+
+      <div>
+          <h3 class="skillsHthree">Skills</h3>
+          <ul class="skillsUl">
+            <li class="skillsLi"><i class="devicon-nodejs-plain colored skillsItag"></i></li>
+            <li class="skillsLi"><i class="devicon-javascript-plain colored skillsItag"></i></li>
+            <li class="skillsLi"><i class="devicon-html5-plain colored skillsItag"></i></li>
+            <li class="skillsLi"><i class="devicon-css3-plain colored skillsItag"></i></li>
+            <li class="skillsLi"><i class="devicon-express-original colored skillsItag"></i></li>
+            <li class="skillsLi"><i class="devicon-postgresql-plain colored skillsItag"></i></li>
+            <li class="skillsLi"><i class="devicon-sequelize-plain colored skillsItag"></i></li>
+            <li class="skillsLi"><i class="devicon-mongodb-plain colored skillsItag"></i></li>
+            <li class="skillsLi"><i class="devicon-heroku-original colored skillsItag"></i></li>
+            <li class="skillsLi"><i class="devicon-git-plain colored skillsItag"></i></li>
+            <li class="skillsLi"><i class="devicon-github-plain colored skillsItag"></i></li>
+          </ul>
+      </div>
+
+    </div>
+    <!-- /.container -->
+
+  </section>
+
+  <footer class="banner" id="Contact">
 
     <div class="container">
 
@@ -264,7 +293,6 @@
 
   </footer>
   <!-- /.banner -->
-
 
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
