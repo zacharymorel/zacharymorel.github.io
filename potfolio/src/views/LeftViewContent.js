@@ -3,10 +3,10 @@ import React from 'react'
 // Styles
 import '../css/App.css';
 
-const Content = (props) => {
+const LeftViewContent = (props) => {
   return (
-    <div className='ContentParent'>
-      <section className='ProjectContent'>
+    <div className='LeftViewContentParent'>
+      <section className='ProjectLeftViewContent'>
         <div className='ProjectInfo'>
           <h1 className='Text'>{props.projectName}</h1>
         </div>
@@ -18,4 +18,4 @@ const Content = (props) => {
   )
 }
 
-export default Content
+export default LeftViewContent

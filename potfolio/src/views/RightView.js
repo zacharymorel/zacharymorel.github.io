@@ -10,7 +10,6 @@ class RightView extends Component {
         <div className='ImageParent'>
           <h1 className='Text'>FOO MERRY</h1>
         </div>
-        {/* TODO: This is where the Slide will be located*/}
       </div>
     )
   }

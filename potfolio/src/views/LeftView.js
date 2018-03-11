@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 
 // Components
-import Content from './Content'
+import LeftViewContent from './LeftViewContent'
 
 // Styles
 import '../css/App.css';
@@ -47,7 +47,7 @@ class LeftView extends Component {
             </button>
           </div>
         </header>
-        <Content 
+        <LeftViewContent 
           projectName={this.state.projectName} 
           projectDiscriptionText={this.state.projectDiscriptionText} 
         />
