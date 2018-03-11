@@ -3,6 +3,27 @@
   height: 80px;
 }
 
+/* @keyframes AppLogo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+} */
+
+/* STYLES BEING BELOW HERE */
+
+.MainParent {
+  display: flex;
+  width: 100%;
+}
+
+.LeftViewParent {
+  width: 60%
+}
+
+.RightViewParent {
+  background-color: aqua;
+  width: 40%;
+}
+
 .MainHeader {
   color: white;
   display: flex;
@@ -10,7 +31,6 @@
   align-items: center;
   height: 60px;
   padding: 20px;
-  width: 60%;
 }
 
 .MainTitle {
@@ -38,7 +58,32 @@
   border-radius: 10px;
 }
 
-/* @keyframes AppLogo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-} */
+.ContentParent {
+  align-items: center;
+  /* background-color: brown; */
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+}
+
+.ProjectContent {
+  align-items: flex-start;
+  /* background-color: dimgray; */
+  display: flex;
+  flex-direction: column;
+  height: 40%;
+  justify-content: space-around;
+  width: 70%
+}
+
+.ProjectInfo {
+  align-items: center;
+  /* background-color: green; */
+  display: flex;
+  height: 20%
+}
+
+.ProjectInfo h1 {
+  font-size: 30px;
+  
+}
