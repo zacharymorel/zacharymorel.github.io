@@ -10,18 +10,13 @@
 
 /* STYLES BEING BELOW HERE */
 
+
+/* ---------------- */
+/* ---------------- */
+/* MAIN.JS STYLES  */
 .MainParent {
   display: flex;
   width: 100%;
-}
-
-.LeftViewParent {
-  width: 60%
-}
-
-.RightViewParent {
-  background-color: #E5E5E5;
-  width: 40%;
 }
 
 .MainHeader {
@@ -58,6 +53,13 @@
   border-radius: 10px;
 }
 
+/* ---------------- */
+/* ---------------- */
+/* LEFT VIEW STYLES */
+.LeftViewParent {
+  width: 60%
+}
+
 .LeftViewContentParent {
   align-items: center;
   /* background-color: brown; */
@@ -82,4 +84,27 @@
 
 .ProjectInfo h1 {
   font-size: 30px;
+}
+
+
+
+/* ---------------- */
+/* ---------------- */
+/* RIGHT VIEW STYLES */
+.RightViewParent {
+  width: 40%;
+}
+
+.ImageParent {
+  align-items: center; 
+  background-color: #E5E5E5;
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+  height: 100%; 
+}
+
+.Images {
+  height: 50%;
+  width: 40%;
 }
