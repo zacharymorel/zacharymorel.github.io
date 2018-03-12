@@ -20,7 +20,7 @@
 }
 
 .RightViewParent {
-  background-color: aqua;
+  background-color: #E5E5E5;
   width: 40%;
 }
 
@@ -77,13 +77,9 @@
 }
 
 .ProjectInfo {
-  align-items: center;
-  /* background-color: green; */
-  display: flex;
   height: 20%
 }
 
 .ProjectInfo h1 {
   font-size: 30px;
-  
 }

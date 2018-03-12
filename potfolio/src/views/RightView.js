@@ -4,11 +4,12 @@ import React, { Component } from 'react'
 import '../css/App.css';
 
 class RightView extends Component {
+
   render() {
     return (
       <div className='RightViewParent'>
-        <div className='ImageParent'>
-          <h1 className='Text'>FOO MERRY</h1>
+        <div className='ImageParent' style={{height: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center'}}>
+          <p>TEST</p>
         </div>
       </div>
     )
