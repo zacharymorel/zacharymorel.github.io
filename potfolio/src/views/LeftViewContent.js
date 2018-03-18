@@ -9,15 +9,18 @@ class LeftViewContent extends Component {
 
   stringSlice = (input) => {
     const arr = input.split(' ')
-    
+
+    console.log('arr', arr)
     for(let i = 0; i <= arr.length - 1; i++) {
       (i === arr.length - 1) ? wordToStyle = arr[i].toString() : filteredWords.push(arr[i]);
-    }
-
+    }                                                            // ^^^ TODO: BUG HERE Pushing on to exsisting arr
+                                                                // I need to delete past array before pushing more projectName or I can treate it immitably  
+    console.log('FILTERED', filteredWords)
     return `${filteredWords.join(' ')}`
   }
 
   render () {
+    console.log(this.props.projectName)
     return (
       <div className='LeftViewContentParent'>
         <section className='ProjectLeftViewContent'>

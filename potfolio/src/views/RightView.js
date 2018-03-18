@@ -19,6 +19,7 @@ const projects = {
 class RightView extends Component {
 
   render() {
+    
     const { text } = style
     return (
       <div className='RightViewParent'>

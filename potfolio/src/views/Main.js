@@ -8,13 +8,25 @@ import '../css/App.css';
 import RightView from './RightView';
 
 class Main extends Component {
+  constructor(props) {
+    super(props)
+    this.interval = setInterval(() => this.updateProject(), 4000)
+    this.state = {
+      currentProject: 'AvatarNutirionTracker'
+    }
+  }
 
-  // Set up toggle notification props so left and right views can show respected content
+  updateProject = () => {
+    (this.state.currentProject === 'AvatarNutirionTracker') ?
+      this.setState({ currentProject: 'MotherNative' }) :
+      this.setState({ currentProject: 'AvatarNutirionTracker' })
+  }
+
   render() {
     return (
       <div className='MainParent'>
-        <LeftView />
-        <RightView />
+        <LeftView currentProject={this.state.currentProject} />
+        <RightView currentProject={this.state.currentProject} />
         {/* TODO: This is where the Component Toggling will happen*/}
       </div>
     )

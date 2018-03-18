@@ -27,9 +27,17 @@ class LeftView extends Component {
   }
 
   componentDidMount () {
-    const description = projectDiscriptionText.AvatarNutirionTracker // TODO: <--- This should turn in to projectDiscriptionText[this.props.currentProject]
-    const project = projectName.AvatarNutirionTracker
+    const description = projectDiscriptionText[this.props.currentProject]
+    const project = projectName[this.props.currentProject]
     this.setState({ projectName: project, projectDiscriptionText: description})
+  }
+
+  componentWillReceiveProps(nextProps) {
+    if(nextProps.currentProject !== this.props.currentProject) {
+      const description = projectDiscriptionText[this.props.currentProject]
+      const project = projectName[this.props.currentProject]
+      this.setState({ projectName: project, projectDiscriptionText: description})
+    }
   }
 
 
