@@ -51,6 +51,7 @@
 .HeaderButtons:active {
   background: #E5E5E5;
   border-radius: 10px;
+  cursor: pointer;
 }
 
 /* ---------------- */
@@ -92,12 +93,12 @@
 /* ---------------- */
 /* RIGHT VIEW STYLES */
 .RightViewParent {
+  background-color: #F5D0C5;
   width: 40%;
 }
 
 .ImageParent {
   align-items: center; 
-  background-color: #E5E5E5;
   display: flex; 
   flex-direction: column;
   justify-content: center;
@@ -105,6 +106,27 @@
 }
 
 .Images {
-  height: 50%;
-  width: 40%;
+  border-radius: 5px;
+  height: 65%;
+  width: 50%;
+}
+
+.ProjectRighViewtButtons {
+  display: flex;
+  flex-direction: row;
+  height: 45px;
+  justify-content: space-between;
+  margin: 5px 0;
+  width: 50%
+}
+
+.ProjectLinkButtons {
+  border-radius: 5px;
+  outline: 0;
+  border: none;
+}
+
+.ProjectLinkButtons:active {
+  background: #E5E5E5;
+  cursor: pointer;
 }

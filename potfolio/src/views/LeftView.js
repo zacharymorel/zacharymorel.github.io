@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 
 // Components
 import LeftViewContent from './LeftViewContent'
+import NavigationButton from '../utils/components/NavigationButton'
 
 // Styles
 import '../css/App.css';
@@ -28,7 +29,7 @@ class LeftView extends Component {
   componentDidMount () {
     const description = projectDiscriptionText.AvatarNutirionTracker // TODO: <--- This should turn in to projectDiscriptionText[this.props.currentProject]
     const project = projectName.AvatarNutirionTracker
-    this.setState({ projectName: project ,projectDiscriptionText: description})
+    this.setState({ projectName: project, projectDiscriptionText: description})
   }
 
 
@@ -39,12 +40,18 @@ class LeftView extends Component {
         {/*<img src={logo} className="AppLogo" alt="logo" />*/}
           <h1 className='MainTitle'>Zachary Morel.</h1>
           <div className='MainNavigation'>
-            <button className='HeaderButtons' onClick={() => console.log('About was Clicked')}>
-              <p className='Text'>About</p>
-            </button>
-            <button className='HeaderButtons' onClick={() => console.log('Contact was Clicked')}>
-              <p className='Text'>Contact</p>
-            </button>
+            <NavigationButton 
+              buttonClassName='HeaderButtons' 
+              onClick={() => console.log('About was Clicked')} 
+              contentClassName='Text'
+              content='About'
+            />
+            <NavigationButton 
+              buttonClassName='HeaderButtons' 
+              onClick={() => console.log('Contact was Clicked')} 
+              contentClassName='Text'
+              content='Contact'
+            />
           </div>
         </header>
         <LeftViewContent 
