@@ -13,34 +13,36 @@ const projects = {
     projectLink1: 'https://itunes.apple.com/us/app/avatar-nutrition-tracker/id1337360354?mt=8',
     projectLink2: 'https://play.google.com/store/apps/details?id=com.avatarnutrition.avatarnutritionapp&hl=en'
   },
-  MotherNative : {}
+  MotherNative : {
+    projectImage: require('../images/MotherNative.png'),
+    contentText1: 'GitHub Node.js',
+    contentText2: 'GitHub React',
+    projectLink1: 'https://github.com/zacharymorel/momapp',
+    projectLink2: 'https://github.com/zacharymorel/finalProject'
+  }
 }
 
 class RightView extends Component {
 
   render() {
-    
     const { text } = style
     return (
       <div className='RightViewParent'>
         <div className='ImageParent'> 
-          <img className='Images' alt='Tracker should be here...' src={projects.AvatarNutirionTracker.projectImage}></img>
-          {/* TODO: ^^^ this is going to toggle JSX expression based upon PROPS current project*/}
+          <img className='Images' alt='Tracker should be here...' src={projects[this.props.currentProject].projectImage}></img>
           <div className='ProjectRighViewtButtons'>
             <NavigationButton 
-              // TODO: this* buttons will also have dynamic content passed to them based upon current project
               buttonClassName='ProjectLinkButtons' 
-              onClick={() => window.open(projects.AvatarNutirionTracker.projectLink1)} 
+              onClick={() => window.open(projects[this.props.currentProject].projectLink1)} 
               contentClassName='Text'
-              content={projects.AvatarNutirionTracker.contentText1}
+              content={projects[this.props.currentProject].contentText1}
               contentTextSpecificStyle={text}
             />
             <NavigationButton 
-              // TODO: this* buttons will also have dynamic content passed to them based upon current project
               buttonClassName='ProjectLinkButtons' 
-              onClick={() => window.open(projects.AvatarNutirionTracker.projectLink2)}  
+              onClick={() => window.open(projects[this.props.currentProject].projectLink2)}  
               contentClassName='Text'
-              content={projects.AvatarNutirionTracker.contentText2}
+              content={projects[this.props.currentProject].contentText2}
               contentTextSpecificStyle={text}
             />
           </div>

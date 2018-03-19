@@ -74,13 +74,15 @@
   /* background-color: dimgray; */
   display: flex;
   flex-direction: column;
-  height: 40%;
+  height: 30%;
   justify-content: space-around;
   width: 70%
 }
 
 .ProjectInfo {
-  height: 20%
+  display: flex;
+  height: 20%;
+  flex-direction: row;
 }
 
 .ProjectInfo h1 {

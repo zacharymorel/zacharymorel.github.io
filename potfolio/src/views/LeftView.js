@@ -34,8 +34,8 @@ class LeftView extends Component {
 
   componentWillReceiveProps(nextProps) {
     if(nextProps.currentProject !== this.props.currentProject) {
-      const description = projectDiscriptionText[this.props.currentProject]
-      const project = projectName[this.props.currentProject]
+      const description = projectDiscriptionText[nextProps.currentProject]
+      const project = projectName[nextProps.currentProject]
       this.setState({ projectName: project, projectDiscriptionText: description})
     }
   }
