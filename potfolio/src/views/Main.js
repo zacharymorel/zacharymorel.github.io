@@ -27,7 +27,6 @@ class Main extends Component {
       <div className='MainParent'>
         <LeftView currentProject={this.state.currentProject} />
         <RightView currentProject={this.state.currentProject} />
-        {/* TODO: This is where the Component Toggling will happen*/}
       </div>
     )
   }

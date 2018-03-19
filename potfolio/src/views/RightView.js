@@ -5,6 +5,7 @@ import NavigationButton from '../utils/components/NavigationButton'
 // Styles
 import '../css/App.css';
 
+
 const projects = {
   AvatarNutirionTracker : {
     projectImage: require('../images/AvatarNutritionTracker.png'),
@@ -22,13 +23,30 @@ const projects = {
   }
 }
 
+let styles 
+
 class RightView extends Component {
+  constructor(props){
+    super(props)
+    this.viewInformer = 'ImageParent'
+  }
+
+  componentWillReceiveProps(nextProps) {
+    if (nextProps.currentProject !== this.props.currentProject) {
+      styles = {
+        transform: `translate(${0}px, ${-100}%)`
+      }
+    }
+  }
+
 
   render() {
     const { text } = style
+    // console.log(this.viewInformer)
     return (
       <div className='RightViewParent'>
-        <div className='ImageParent'> 
+    {/*<div className='ImageParent' style={styles}>*/}
+        <div className='ImageParent' > 
           <img className='Images' alt='Tracker should be here...' src={projects[this.props.currentProject].projectImage}></img>
           <div className='ProjectRighViewtButtons'>
             <NavigationButton 
