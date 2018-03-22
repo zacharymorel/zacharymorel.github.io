@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { PureComponent } from 'react'
 
 import NavigationButton from '../utils/components/NavigationButton'
 
@@ -25,28 +25,14 @@ const projects = {
 
 let styles 
 
-class RightView extends Component {
-  constructor(props){
-    super(props)
-    this.viewInformer = 'ImageParent'
-  }
-
-  componentWillReceiveProps(nextProps) {
-    if (nextProps.currentProject !== this.props.currentProject) {
-      styles = {
-        transform: `translate(${0}px, ${-100}%)`
-      }
-    }
-  }
-
+class RightView extends PureComponent {
 
   render() {
     const { text } = style
-    // console.log(this.viewInformer)
+
     return (
       <div className='RightViewParent'>
-    {/*<div className='ImageParent' style={styles}>*/}
-        <div className='ImageParent' > 
+        <div key={this.props.currentProject} className='ImageParent1' > 
           <img className='Images' alt='Tracker should be here...' src={projects[this.props.currentProject].projectImage}></img>
           <div className='ProjectRighViewtButtons'>
             <NavigationButton 

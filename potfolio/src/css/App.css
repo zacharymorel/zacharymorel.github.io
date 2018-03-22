@@ -84,6 +84,7 @@
 }
 
 .ProjectInfo {
+  animation: slideUp 6s linear 1s;
   display: flex;
   height: 20%;
   flex-direction: row;
@@ -94,13 +95,10 @@
 }
 
 .ProjectText {
-  animation: slidein 3s linear 1s infinite running;
-  /* animation: slideUp 1s linear 1s; */
   font-size: 18px;
   padding: 0;
   margin: 0;
 }
-
 
 
 /* ---------------- */
@@ -111,13 +109,21 @@
   width: 40%;
 }
 
+
 @keyframes slideUp {
-  from { transform: translateY(0); }
-  to   { transform: translateY(-100%); }
+	0% {
+		opacity: 1;
+		transform: translateY(0%);
+	}
+
+	100% {
+		opacity: 0;
+		transform: translateY(-100%);
+	}
 }
 
-.ImageParent {
-  animation: slideUp 1s linear 1s;
+.ImageParent1 {
+  animation: slideUp 6s linear 1s;
   align-items: center; 
   display: flex; 
   flex-direction: column;

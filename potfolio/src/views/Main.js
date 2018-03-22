@@ -10,7 +10,7 @@ import RightView from './RightView';
 class Main extends Component {
   constructor(props) {
     super(props)
-    this.interval = setInterval(() => this.updateProject(), 4000)
+    this.interval = setInterval(() => this.updateProject(), 7000)
     this.state = {
       currentProject: 'AvatarNutirionTracker'
     }

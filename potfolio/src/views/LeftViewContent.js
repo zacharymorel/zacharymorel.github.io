@@ -18,14 +18,15 @@ class LeftViewContent extends Component {
   }
 
   render () {
+    console.log(this.props)
     return (
       <div className='LeftViewContentParent'>
-        <section className='ProjectLeftViewContent'>
-          <div className='ProjectInfo'>
+        <section  className='ProjectLeftViewContent'>
+          <div key={this.props.projectName} className='ProjectInfo'>
             <h1 className='ProjectText'>{this.stringSlice(this.props.projectName)}</h1>
             <h1 className='ProjectText' style={{color: '#FCA311', paddingLeft: 6}}>{wordToStyle}</h1>
           </div>
-          <div className='ProjectInfo'>
+          <div key={this.props.projectDiscriptionText} className='ProjectInfo'>
             <p className='ProjectText' style={{fontSize: 15}}>{this.props.projectDiscriptionText}</p>
           </div>
         </section>
