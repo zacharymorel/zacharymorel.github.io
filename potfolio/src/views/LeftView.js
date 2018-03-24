@@ -7,6 +7,7 @@ import NavigationButton from '../utils/components/NavigationButton'
 // Styles
 import '../css/App.css';
 
+// TODO: Abstract these Variables with RightView Vars
 const projectDiscriptionText = {
   AvatarNutirionTracker: 'The Tracker for Avatar Nutrition is a cross platfrom Mobile App that I got hired on to create, lead, build, and mantain the app for the company.  It is an essential product to Avatar Nutriton\'s product sweep.',
   MotherNative: 'Mother Native is an app that provides an easy task manager for mothers who are expecting and mothers that already have little ones. We aim to consider their needs with easy-to-use features for simplicity during the busiest times of their lives.',
@@ -41,7 +42,7 @@ class LeftView extends PureComponent {
     }
   }
 
-
+  // TODO: RENAME all these "Main..." ClassNames
   render() {
     return (
       <div className='LeftViewParent'>

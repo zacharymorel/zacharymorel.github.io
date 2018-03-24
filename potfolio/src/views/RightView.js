@@ -7,6 +7,8 @@ import Shape from '../utils/components/Shapes'
 import '../css/App.css';
 
 
+// TODO: Abstract these and the other params Or do I move it in to the Class?  
+
 const projects = {
   AvatarNutirionTracker : {
     projectImage: require('../images/AvatarNutritionTracker.png'),
