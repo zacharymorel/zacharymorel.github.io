@@ -2,7 +2,9 @@
 /* ---------------- */
 /* LEFT VIEW STYLES */
 .LeftViewParent {
-  width: 60vw;
+  display: flex;
+  flex-direction: column;
+  width: 60%;
 }
 
 .LeftHeader {
@@ -10,7 +12,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 60px;
+  height: 50px;
   padding: 20px;
 }
 
@@ -20,14 +22,14 @@
   margin: 0;
 }
 
-.LeftViewContentParent {
+.ProjectDiscriptionParent {
   align-items: center;
   display: flex;
   height: 100vh;
   justify-content: center;
 }
 
-.ProjectLeftViewContent {
+.ProjectDiscription {
   align-items: flex-start;
   display: flex;
   flex-direction: column;
@@ -51,4 +53,30 @@
   font-size: 18px;
   padding: 0;
   margin: 0;
+}
+
+.AboutMeParent {
+  /* background: dodgerblue; */
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 0 1% 0% 5%;
+}
+
+.ImageAndFactsContainer {
+  /* background: darksalmon; */
+  border-left: 2px solid #373940;
+  height: 100%;
+  padding: 0.5%;
+}
+
+.Image {
+  border-radius: 5px;
+  height: 35%;
+  width: 40%;
+}
+
+.Categories {
+  margin: 8px 0;
+  text-decoration: underline overline #FCA311;
 }

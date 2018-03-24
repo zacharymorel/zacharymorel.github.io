@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 // Styles
 import '../../css/leftView.css';
 
-class LeftViewContent extends Component {
+class ProjectDiscription extends Component {
   wordToStyle 
 
   stringSlice = (input) => {
@@ -21,8 +21,8 @@ class LeftViewContent extends Component {
 
   render () {
     return (
-      <div className='LeftViewContentParent'>
-        <section className='ProjectLeftViewContent'>
+      <div className='ProjectDiscriptionParent'>
+        <section className='ProjectDiscription'>
           <div key={this.determineUpdate(this.props.projectName, 'projectName')} className='ProjectInfo'>
             <h1 className='ProjectText'>{this.stringSlice(this.props.projectName)}</h1>
             <h1 className='ProjectText' style={{color: '#FCA311', paddingLeft: 6}}>{this.wordToStyle}</h1>
@@ -36,4 +36,4 @@ class LeftViewContent extends Component {
   }
 }
 
-export default LeftViewContent
+export default ProjectDiscription

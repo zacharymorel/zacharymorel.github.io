@@ -1,8 +1,9 @@
 import React, { PureComponent } from 'react'
 
 // Components
-import LeftViewContent from './LeftViewContent'
+import ProjectDiscription from './ProjectDiscription'
 import NavigationButton from '../../utils/NavigationButton'
+import AboutMe from './AboutMe'
 import { ProjectConfig } from '../../ProjectConfig'
 
 // Styles
@@ -15,7 +16,7 @@ class LeftView extends PureComponent {
     this.state = {
       projectName: '', 
       projectDiscriptionText: '',
-      componentToShow: ''
+      componentToShow: 'ProjectDiscription'
     }
   }
 
@@ -33,6 +34,10 @@ class LeftView extends PureComponent {
     }
   }
 
+  toggleComponents = (params) => {
+    this.state.componentToShow !== params ? this.setState({ componentToShow: params }) : this.setState({ componentToShow: 'ProjectDiscription' })
+  }
+
   render() {
     return (
       <div className='LeftViewParent'>
@@ -41,7 +46,7 @@ class LeftView extends PureComponent {
           <div className='Navigation'>
             <NavigationButton 
               buttonClassName='HeaderButtons' 
-              onClick={() => console.log('About was Clicked')} 
+              onClick={() => this.toggleComponents('AboutMe')} 
               contentClassName='Text'
               content='About'
             />
@@ -53,10 +58,14 @@ class LeftView extends PureComponent {
             />
           </div>
         </header>
-        <LeftViewContent 
-          projectName={this.state.projectName} 
-          projectDiscriptionText={this.state.projectDiscriptionText} 
-        />
+        {this.state.componentToShow === 'ProjectDiscription' ? 
+          <ProjectDiscription 
+            projectName={this.state.projectName} 
+            projectDiscriptionText={this.state.projectDiscriptionText} 
+          />
+          : 
+          <AboutMe />
+        }
       </div>
     )
   }
