@@ -7,7 +7,7 @@
   position: relative;
   width: 50px;
   right: -450px;
-  z-index: 2;
+  z-index: 3;
   -moz-border-radius: 50px;
   -webkit-border-radius: 50px;
 }
@@ -20,17 +20,19 @@
   position: relative;
   width: 200px;
   right: -120px;
+  z-index: 1;
   -moz-border-radius: 200px;
   -webkit-border-radius: 200px;
 }
 
-.PurpleOval {
+.BlueOval {
 	background: #C5D1EB;
   border-radius: 100px / 50px;
   height: 100px;
-  left: 200px;
+  left: 230px;
   position: relative;
-	width: 500px;
+  width: 500px;
+  z-index: 2;
 	-moz-border-radius: 100px / 50px;
 	-webkit-border-radius: 100px / 50px;
 }
@@ -38,21 +40,23 @@
 .TriangleTopRight {
 	border-left: 100px solid transparent;
 	border-top: 100px solid #F4FAFF;
-	width: 0;
-  height: 0;
   bottom: 500px;
+  height: 0;
   left: 480px;
   position: relative;
+	width: 0;
+  z-index: 1;
 }
 
 .TriangleRight {
-	width: 0;
-  height: 0;
-	border-top: 200px solid transparent;
+  border-top: 200px solid transparent;
 	border-left: 50px solid #CABAC8;
   border-bottom: 200px solid transparent;
-  position: relative;
-  top: -120px;
+  height: 0;
+  position: absolute;
+  top: 250px;
+	width: 0;
+  z-index: 1;
 }
 
 .BlueSmallCircleTwo {
@@ -63,7 +67,20 @@
   position: relative;
   bottom: 220px;
   width: 100px;
+  z-index: 1;
   -moz-border-radius: 50px;
   -webkit-border-radius: 50px;
 }
-	
+  
+.LightOval {
+	background: #F3E0EC;
+  border-radius: 50px;
+  height: 400px;
+  left: 200px;
+  position: relative;
+  top: -250px;
+  width: 400px;
+  z-index: 1;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+}

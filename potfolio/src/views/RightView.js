@@ -1,7 +1,7 @@
 import React, { PureComponent } from 'react'
 
 import NavigationButton from '../utils/components/NavigationButton'
-import Shape from '../utils/components/shapes'
+import Shape from '../utils/components/Shapes'
 
 // Styles
 import '../css/App.css';
@@ -26,7 +26,7 @@ const projects = {
 
 
 class RightView extends PureComponent {
-  ShapeClassNames = ['BlueSmallCircleOne', 'RedSmallCircle', 'BlueSmallCircleTwo', 'PurpleOval', 'TriangleTopRight', 'TriangleRight'] 
+  ShapeClassNames = ['BlueSmallCircleOne', 'RedSmallCircle', 'BlueSmallCircleTwo', 'BlueOval', 'TriangleTopRight', 'LightOval', 'TriangleRight'] 
 
   render() {
     const { text } = style

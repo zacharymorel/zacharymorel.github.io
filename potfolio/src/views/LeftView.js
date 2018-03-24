@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { PureComponent } from 'react'
 
 // Components
 import LeftViewContent from './LeftViewContent'
@@ -17,7 +17,7 @@ const projectName = {
   MotherNative: 'Mother Native'
 }
 
-class LeftView extends Component {
+class LeftView extends PureComponent {
   constructor(props) {
     super(props)
     this.state = {
@@ -25,6 +25,7 @@ class LeftView extends Component {
       projectDiscriptionText: ''
     }
   }
+  // TODO: FIX KEY PROP BUG?.. 
 
   componentDidMount () {
     const description = projectDiscriptionText[this.props.currentProject]

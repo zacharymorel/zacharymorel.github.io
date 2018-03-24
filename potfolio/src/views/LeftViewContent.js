@@ -20,7 +20,7 @@ class LeftViewContent extends Component {
   render () {
     return (
       <div className='LeftViewContentParent'>
-        <section  className='ProjectLeftViewContent'>
+        <section className='ProjectLeftViewContent'>
           <div key={this.props.projectName} className='ProjectInfo'>
             <h1 className='ProjectText'>{this.stringSlice(this.props.projectName)}</h1>
             <h1 className='ProjectText' style={{color: '#FCA311', paddingLeft: 6}}>{wordToStyle}</h1>
