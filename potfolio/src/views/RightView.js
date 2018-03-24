@@ -26,7 +26,7 @@ const projects = {
 
 
 class RightView extends PureComponent {
-  ShapeClassNames = ['BlueSmallCircleOne', 'RedSmallCircle', 'BlueSmallCircleTwo', 'PurpleOval', 'TriangleTopLeft', 'TriangleRight'] 
+  ShapeClassNames = ['BlueSmallCircleOne', 'RedSmallCircle', 'BlueSmallCircleTwo', 'PurpleOval', 'TriangleTopRight', 'TriangleRight'] 
 
   render() {
     const { text } = style
@@ -52,7 +52,7 @@ class RightView extends PureComponent {
             />
           </div>
         </div>
-        { this.ShapeClassNames.map((item) => <Shape key={item} className={item} /> ) }
+        { this.ShapeClassNames.map(item => <Shape key={item} className={item} /> ) }
       </div>
     )
   }

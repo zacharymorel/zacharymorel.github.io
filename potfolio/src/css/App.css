@@ -10,6 +10,10 @@
 
 /* STYLES BEING BELOW HERE */
 
+.App {
+  height: 100%;
+  overflow: hidden;
+}
 
 /* ---------------- */
 /* ---------------- */
@@ -17,6 +21,7 @@
 .MainParent {
   display: flex;
   width: 100%;
+  height: 50%;
 }
 
 .MainHeader {
@@ -62,7 +67,7 @@
 /* ---------------- */
 /* LEFT VIEW STYLES */
 .LeftViewParent {
-  width: 60%;
+  width: 60vw;
 }
 
 .LeftViewContentParent {
@@ -106,6 +111,8 @@
 /* RIGHT VIEW STYLES */
 .RightViewParent {
   background-color: #F5D0C5;
+  height: 100%;
+  overflow: hidden;
   width: 40%;
 }
 
