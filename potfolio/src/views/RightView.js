@@ -13,7 +13,6 @@ class RightView extends PureComponent {
 
   render() {
     const { text } = style
-    console.log(this.Projects[this.props.currentProject].projectImage)
 
     return (
       <div className='RightViewParent'>        

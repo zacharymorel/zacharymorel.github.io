@@ -3,41 +3,31 @@ import React, { PureComponent } from 'react'
 // Components
 import LeftViewContent from './LeftViewContent'
 import NavigationButton from '../utils/NavigationButton'
+import { ProjectConfig } from '../ProjectConfig'
 
 // Styles
 import '../css/leftView.css';
 
-// TODO: Abstract these Variables with RightView Vars
-const projectDiscriptionText = {
-  AvatarNutirionTracker: 'The Tracker for Avatar Nutrition is a cross platfrom Mobile App that I got hired on to create, lead, build, and mantain the app for the company.  It is an essential product to Avatar Nutriton\'s product sweep.',
-  MotherNative: 'Mother Native is an app that provides an easy task manager for mothers who are expecting and mothers that already have little ones. We aim to consider their needs with easy-to-use features for simplicity during the busiest times of their lives.',
-}
-
-const projectName = {
-  AvatarNutirionTracker: 'Avatar Nutirion Tracker',
-  MotherNative: 'Mother Native'
-}
-
 class LeftView extends PureComponent {
   constructor(props) {
     super(props)
+    this.Projects = ProjectConfig
     this.state = {
       projectName: '', 
       projectDiscriptionText: ''
     }
   }
-  // TODO: FIX KEY PROP BUG?.. 
 
   componentDidMount () {
-    const description = projectDiscriptionText[this.props.currentProject]
-    const project = projectName[this.props.currentProject]
+    const description = this.Projects[this.props.currentProject].discription
+    const project = this.Projects[this.props.currentProject].projectName
     this.setState({ projectName: project, projectDiscriptionText: description})
   }
 
   componentWillReceiveProps(nextProps) {
     if(nextProps.currentProject !== this.props.currentProject) {
-      const description = projectDiscriptionText[nextProps.currentProject]
-      const project = projectName[nextProps.currentProject]
+      const description = this.Projects[nextProps.currentProject].discription
+      const project = this.Projects[nextProps.currentProject].projectName
       this.setState({ projectName: project, projectDiscriptionText: description})
     }
   }
