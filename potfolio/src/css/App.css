@@ -62,7 +62,7 @@
 /* ---------------- */
 /* LEFT VIEW STYLES */
 .LeftViewParent {
-  width: 60%
+  width: 60%;
 }
 
 .LeftViewContentParent {
@@ -129,11 +129,13 @@
   flex-direction: column;
   justify-content: center;
   height: 100%; 
+  position: absolute;
+  z-index: 3;
 }
 
 .Images {
   border-radius: 5px;
-  height: 65%;
+  height: 70%;
   width: 50%;
 }
 
@@ -160,4 +162,5 @@
 .ProjectLinkButtons:hover {
   cursor: pointer; 
 }
+
 

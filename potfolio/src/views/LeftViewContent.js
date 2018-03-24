@@ -18,7 +18,6 @@ class LeftViewContent extends Component {
   }
 
   render () {
-    console.log(this.props)
     return (
       <div className='LeftViewContentParent'>
         <section  className='ProjectLeftViewContent'>

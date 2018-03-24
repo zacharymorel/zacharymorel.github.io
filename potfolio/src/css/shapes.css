@@ -1,0 +1,68 @@
+
+.BlueSmallCircleOne {
+  background: #98C1D9;
+  border-radius: 50px;
+  bottom: -60px; 
+  height: 100px; 
+  position: absolute;
+  width: 100px;
+  right: 400px;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+}
+
+.RedSmallCircle {
+  background: #F06543;
+  border-radius: 200px;
+  bottom: 200px; 
+  height: 200px; 
+  position: absolute;
+  width: 200px;
+  right: -120px;
+  -moz-border-radius: 200px;
+  -webkit-border-radius: 200px;
+}
+
+.PurpleOval {
+	background: #C5D1EB;
+  border-radius: 100px / 50px;
+  height: 100px;
+  left: 200px;
+  position: relative;
+	width: 500px;
+	-moz-border-radius: 100px / 50px;
+	-webkit-border-radius: 100px / 50px;
+}
+
+.TriangleTopLeft {
+	border-right: 100px solid transparent;
+	border-top: 100px solid #F4FAFF;
+	width: 0;
+  height: 0;
+  top: -100px;
+  position: relative;
+}
+
+.TriangleRight {
+	width: 0;
+  height: 0;
+	border-top: 200px solid transparent;
+	border-left: 50px solid #CABAC8;
+  border-bottom: 200px solid transparent;
+  position: relative;
+  top: -120px;
+}
+
+.BlueSmallCircleTwo {
+  background: #98C1D9;
+  border-radius: 50px;
+  bottom: -60px; 
+  height: 100px; 
+  right: 20px;
+  position: absolute;
+  bottom: 220px;
+  width: 100px;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+}
+	

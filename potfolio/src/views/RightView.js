@@ -1,6 +1,7 @@
 import React, { PureComponent } from 'react'
 
 import NavigationButton from '../utils/components/NavigationButton'
+import Shape from '../utils/components/shapes'
 
 // Styles
 import '../css/App.css';
@@ -23,15 +24,15 @@ const projects = {
   }
 }
 
-let styles 
 
 class RightView extends PureComponent {
+  ShapeClassNames = ['BlueSmallCircleOne', 'RedSmallCircle', 'BlueSmallCircleTwo', 'PurpleOval', 'TriangleTopLeft', 'TriangleRight'] 
 
   render() {
     const { text } = style
 
     return (
-      <div className='RightViewParent'>
+      <div className='RightViewParent'>        
         <div key={this.props.currentProject} className='ImageParent1' > 
           <img className='Images' alt='Tracker should be here...' src={projects[this.props.currentProject].projectImage}></img>
           <div className='ProjectRighViewtButtons'>
@@ -51,6 +52,7 @@ class RightView extends PureComponent {
             />
           </div>
         </div>
+        { this.ShapeClassNames.map((item) => <Shape key={item} className={item} /> ) }
       </div>
     )
   }
