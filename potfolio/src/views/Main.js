@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
 
 // Components
-import LeftView from './LeftView'
+import LeftView from './LeftViewComponents/LeftView'
+import RightView from './RightViewComponents/RightView';
 
 // Styles
 import '../css/App.css';
-import RightView from './RightView';
 
 class Main extends Component {
   constructor(props) {
