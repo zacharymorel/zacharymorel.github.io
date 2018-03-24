@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 
 // Styles
-import '../css/App.css';
+import '../css/leftView.css';
 
 let wordToStyle 
 class LeftViewContent extends Component {

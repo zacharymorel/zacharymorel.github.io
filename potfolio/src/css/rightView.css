@@ -1,0 +1,63 @@
+/* ---------------- */
+/* ---------------- */
+/* RIGHT VIEW STYLES */
+.RightViewParent {
+  background-color: #F5D0C5;
+  height: 100%;
+  overflow: hidden;
+  width: 40%;
+}
+
+
+@keyframes slideUp {
+	0% {
+		opacity: 1;
+		transform: translateY(0%);
+	}
+
+	100% {
+		opacity: 0;
+		transform: translateY(-100%);
+	}
+}
+
+.ImageParent1 {
+  animation: slideUp 6s linear 1s;
+  align-items: center; 
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+  height: 100%; 
+  position: absolute;
+  z-index: 3;
+}
+
+.Images {
+  border-radius: 5px;
+  height: 70%;
+  width: 50%;
+}
+
+.ProjectButtons {
+  display: flex;
+  flex-direction: row;
+  height: 45px;
+  justify-content: space-between;
+  margin: 5px 0;
+  width: 50%
+}
+
+.ProjectLinkButtons {
+  border-radius: 5px;
+  outline: 0;
+  border: none;
+}
+
+.ProjectLinkButtons:active {
+  background: #E5E5E5;
+  cursor: pointer; 
+}
+
+.ProjectLinkButtons:hover {
+  cursor: pointer; 
+}

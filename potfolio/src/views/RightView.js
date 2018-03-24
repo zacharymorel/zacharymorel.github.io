@@ -1,55 +1,37 @@
 import React, { PureComponent } from 'react'
 
-import NavigationButton from '../utils/components/NavigationButton'
-import Shape from '../utils/components/Shapes'
+import NavigationButton from '../utils/NavigationButton'
+import Shape from '../utils/Shapes'
+import { ProjectConfig } from '../ProjectConfig.js'
 
-// Styles
-import '../css/App.css';
-
-
-// TODO: Abstract these and the other params Or do I move it in to the Class?  
-
-const projects = {
-  AvatarNutirionTracker : {
-    projectImage: require('../images/AvatarNutritionTracker.png'),
-    contentText1: 'Apple Store',
-    contentText2: 'Google Play Store',
-    projectLink1: 'https://itunes.apple.com/us/app/avatar-nutrition-tracker/id1337360354?mt=8',
-    projectLink2: 'https://play.google.com/store/apps/details?id=com.avatarnutrition.avatarnutritionapp&hl=en'
-  },
-  MotherNative : {
-    projectImage: require('../images/MotherNative.png'),
-    contentText1: 'GitHub Node.js',
-    contentText2: 'GitHub React',
-    projectLink1: 'https://github.com/zacharymorel/momapp',
-    projectLink2: 'https://github.com/zacharymorel/finalProject'
-  }
-}
-
+import '../css/rightView.css'
+import '../css/shapes.css'
 
 class RightView extends PureComponent {
   ShapeClassNames = ['BlueSmallCircleOne', 'RedSmallCircle', 'BlueSmallCircleTwo', 'BlueOval', 'TriangleTopRight', 'LightOval', 'TriangleRight'] 
+  Projects = ProjectConfig
 
   render() {
     const { text } = style
+    console.log(this.Projects[this.props.currentProject].projectImage)
 
     return (
       <div className='RightViewParent'>        
         <div key={this.props.currentProject} className='ImageParent1' > 
-          <img className='Images' alt='Tracker should be here...' src={projects[this.props.currentProject].projectImage}></img>
-          <div className='ProjectRighViewtButtons'>
+          <img className='Images' alt='Tracker should be here...' src={this.Projects[this.props.currentProject].projectImage}></img>
+          <div className='ProjectButtons'>
             <NavigationButton 
               buttonClassName='ProjectLinkButtons' 
-              onClick={() => window.open(projects[this.props.currentProject].projectLink1)} 
+              onClick={() => window.open(this.Projects[this.props.currentProject].projectLink1)} 
               contentClassName='Text'
-              content={projects[this.props.currentProject].contentText1}
+              content={this.Projects[this.props.currentProject].contentText1}
               contentTextSpecificStyle={text}
             />
             <NavigationButton 
               buttonClassName='ProjectLinkButtons' 
-              onClick={() => window.open(projects[this.props.currentProject].projectLink2)}  
+              onClick={() => window.open(this.Projects[this.props.currentProject].projectLink2)}  
               contentClassName='Text'
-              content={projects[this.props.currentProject].contentText2}
+              content={this.Projects[this.props.currentProject].contentText2}
               contentTextSpecificStyle={text}
             />
           </div>

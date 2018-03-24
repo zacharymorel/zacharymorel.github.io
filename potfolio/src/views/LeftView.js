@@ -2,10 +2,10 @@ import React, { PureComponent } from 'react'
 
 // Components
 import LeftViewContent from './LeftViewContent'
-import NavigationButton from '../utils/components/NavigationButton'
+import NavigationButton from '../utils/NavigationButton'
 
 // Styles
-import '../css/App.css';
+import '../css/leftView.css';
 
 // TODO: Abstract these Variables with RightView Vars
 const projectDiscriptionText = {
@@ -42,14 +42,13 @@ class LeftView extends PureComponent {
     }
   }
 
-  // TODO: RENAME all these "Main..." ClassNames
   render() {
     return (
       <div className='LeftViewParent'>
-        <header className='MainHeader'>
+        <header className='LeftHeader'>
         {/*<img src={logo} className="AppLogo" alt="logo" />*/}
-          <h1 className='MainTitle'>Zachary Morel.</h1>
-          <div className='MainNavigation'>
+          <h1 className='LeftTitle'>Zachary Morel.</h1>
+          <div className='Navigation'>
             <NavigationButton 
               buttonClassName='HeaderButtons' 
               onClick={() => console.log('About was Clicked')} 

@@ -1,6 +1,6 @@
 import React from 'react'
 
-import '../../css/shapes.css'
+import '../css/shapes.css'
 
 const Shape = (props) => {
   return (
