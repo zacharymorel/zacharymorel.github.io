@@ -1,13 +1,9 @@
-/* ---------------- */
-/* ---------------- */
-/* RIGHT VIEW STYLES */
 .RightViewParent {
   background-color: #F5D0C5;
   height: 100%;
   overflow: scroll;
   width: 40%;
 }
-
 
 @keyframes slideUp {
 	0% {
