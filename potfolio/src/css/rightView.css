@@ -4,7 +4,7 @@
 .RightViewParent {
   background-color: #F5D0C5;
   height: 100%;
-  overflow: hidden;
+  overflow: scroll;
   width: 40%;
 }
 

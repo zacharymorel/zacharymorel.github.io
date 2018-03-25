@@ -30,7 +30,7 @@ const Contact = () => {
           buttonClassName='HeaderButtons'
           onClick={() => window.open(PortfolioConfig.ContactInfo.Telephone)}
         >
-          <p className='Text'>TELLE</p>
+          <p className='Text'>TEL</p>
         </NavigationButton>
       </section>
     </div>

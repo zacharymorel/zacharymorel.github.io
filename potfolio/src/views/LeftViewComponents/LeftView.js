@@ -18,7 +18,7 @@ class LeftView extends PureComponent {
       projectName: '', 
       projectDiscriptionText: '',
       determineContent: 'ProjectDiscription',
-      showContactHeader: false
+      showContactHeader: false,
     }
   }
 
@@ -52,7 +52,7 @@ class LeftView extends PureComponent {
           <div className='Navigation'>
             <NavigationButton 
               buttonClassName='HeaderButtons' 
-              onClick={() => this.toggleComponents('AboutMe')} 
+              onClick={async () => { await this.setState({ aboutPressed: !this.state.aboutPressed }); this.toggleComponents('AboutMe'); }} 
             >
               <p className='Text'>About</p>
             </NavigationButton>

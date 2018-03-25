@@ -3,9 +3,9 @@ import SpaceFiller from '../../utils/SpaceFiller'
 
 import '../../css/leftView.css'
 
-const AboutMe = () => {
+const AboutMe = (props) => {
   return (
-    <div className='AboutMeParent'>
+    <div id='AboutMeParent' className={props.animationName ? 'slideIn' : 'slideOut'}>
       <section className='ImageAndFactsContainer'>
         <img className='Image' alt='I should be smiling here...' src={require('../../images/oldImages/ProfilePic.jpeg')} />
         <p className='Text' style={{marginTop: 5, marginBottom: 5}}><span className='Categories'>What I am:</span> Friendly Neighborhood Software Developer</p>
