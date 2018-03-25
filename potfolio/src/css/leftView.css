@@ -53,19 +53,45 @@
 }
 
 .ProjectDiscription {
+  /* background-color: greenyellow; */
   align-items: flex-start;
   display: flex;
   flex-direction: column;
-  height: 30%;
+  height: 60%;
   justify-content: space-around;
   width: 70%
 }
 
 .ProjectInfo {
-  animation: slideUp 6s linear 1s;
+  animation: slideUp 1s linear 6s;
   display: flex;
-  height: 20%;
+  height: 10%;
   flex-direction: row;
+}
+
+@keyframes fadeOut {
+	0% {
+		opacity: 1;
+		transform: scale(0%);
+	}
+
+	100% {
+		opacity: 0;
+		transform: scale(100%);
+	}
+}
+
+.ProjectTitle {
+  animation: fadeOut 1s ease-out 6s;
+  display: flex;
+  height: 10%;
+  flex-direction: row;
+}
+
+.ProjectTitle .ProjectText {
+  animation: fadeOut 1s ease-out 6s;
+  height: 10%;
+  font-size: 40px;
 }
 
 .ProjectInfo h1 {
@@ -144,5 +170,5 @@
   background: #98C1D9;
   border-radius: 4px;
   height: 100%;
-  transition: width 2s ease-in-out 0.5s;
+  transition: width 1s ease-in-out 0s;
 }

@@ -15,25 +15,27 @@ class RightView extends PureComponent {
     const { text } = style
 
     return (
-      <div className='RightViewParent'>        
-        <div key={this.props.currentProject} className='ImageParent1' > 
-          <img className='Images' alt='Tracker should be here...' src={this.Projects[this.props.currentProject].projectImage}></img>
-          <div className='ProjectButtons'>
-            <NavigationButton 
-              buttonClassName='ProjectLinkButtons' 
-              onClick={() => window.open(this.Projects[this.props.currentProject].projectLink1)} 
-              contentClassName='Text'
-            >
-              <p className='Text' style={text}>{this.Projects[this.props.currentProject].contentText1}</p>
-            </NavigationButton>
-            <NavigationButton 
-              buttonClassName='ProjectLinkButtons' 
-              onClick={() => window.open(this.Projects[this.props.currentProject].projectLink2)}  
-            >
-              <p className='Text' style={text}>{this.Projects[this.props.currentProject].contentText2}</p>
-            </NavigationButton>
+      <div className='RightViewParent'>
+        <section className='RighViewContent'>        
+          <div key={this.props.currentProject} className='ImageParent1' > 
+            <img className='Images' alt='Tracker should be here...' src={this.Projects[this.props.currentProject].projectImage}></img>
+            <div className='ProjectButtons'>
+              <NavigationButton 
+                buttonClassName='ProjectLinkButtons' 
+                onClick={() => window.open(this.Projects[this.props.currentProject].projectLink1)} 
+                contentClassName='Text'
+              >
+                <p className='Text' style={text}>{this.Projects[this.props.currentProject].contentText1}</p>
+              </NavigationButton>
+              <NavigationButton 
+                buttonClassName='ProjectLinkButtons' 
+                onClick={() => window.open(this.Projects[this.props.currentProject].projectLink2)}  
+              >
+                <p className='Text' style={text}>{this.Projects[this.props.currentProject].contentText2}</p>
+              </NavigationButton>
+            </div>
           </div>
-        </div>
+        </section>
         { this.ShapeClassNames.map(item => <Shape key={item} className={item} /> ) }
       </div>
     )

@@ -25,9 +25,9 @@ class ProjectDiscription extends Component {
     return `${filteredWords.join(' ')}`
   }
 
-  componentDidUpdate(prevProps) {
-    if(this.props !== prevProps)
-      this.calculateProgress(this.state.progressBarCalc);
+  componentWillReceiveProps(NextProps) {
+    if(this.props !== NextProps)
+      this.calculateProgress(this.state.progressBarCalc)
   }
 
   calculateProgress = (calc) => {
@@ -53,10 +53,11 @@ class ProjectDiscription extends Component {
     return (
       <div className='ProjectDiscriptionParent'>
         <section className='ProjectDiscription'>
-          <div key={this.determineUpdate(this.props.projectName, 'projectName')} className='ProjectInfo'>
+          <div key={this.determineUpdate(this.props.projectName, 'projectName')} className='ProjectTitle'>
             <h1 className='ProjectText'>{this.stringSlice(this.props.projectName)}</h1>
             <h1 className='ProjectText' style={{color: '#FCA311', paddingLeft: 6}}>{this.wordToStyle}</h1>
           </div>
+          <SpaceFiller styles={{backgroundColor: '#fff', height: '20%', position: 'relative', width: '100%', zIndex: 5}} />
           <div key={this.determineUpdate(this.props.projectDiscriptionText, 'projectDiscriptionText')} className='ProjectInfo'>
             <p className='ProjectText' style={{fontSize: 15}}>{this.props.projectDiscriptionText}</p>
           </div>

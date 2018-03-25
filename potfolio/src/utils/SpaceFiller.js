@@ -2,7 +2,7 @@ import React from 'react'
 
 const SpaceFiller = (props) => {
   return (
-    <div style={props.Styles} />
+    <div style={props.styles} />
   )
 }
 
