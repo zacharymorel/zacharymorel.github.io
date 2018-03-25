@@ -18,6 +18,7 @@ class LeftView extends PureComponent {
       projectName: '', 
       projectDiscriptionText: '',
       determineContent: 'ProjectDiscription',
+      activeButton: 'ProjectDiscription',
       showContactHeader: false,
     }
   }
@@ -37,11 +38,16 @@ class LeftView extends PureComponent {
   }
 
   toggleComponents = (params) => {
+    if(params === 'ProjectDiscription')
+      this.state.determineContent !== params && this.setState({ activeButton: params, determineContent: params, showContactHeader: false }) 
+
     if(params === 'AboutMe')
-      this.state.determineContent !== params ? this.setState({ determineContent: params }) : this.setState({ determineContent: 'ProjectDiscription' })
+      this.state.determineContent !== params && this.setState({ activeButton: params, determineContent: params, showContactHeader: false }) 
 
     if(params === 'Contact')
-      !this.state.showContactHeader ? this.setState({ showContactHeader: true }) : this.setState({ showContactHeader: false })
+      !this.state.showContactHeader ? 
+        this.setState({ activeButton: params, showContactHeader: true }) : 
+        this.setState({ showContactHeader: false })
   }
 
   render() {
@@ -52,27 +58,36 @@ class LeftView extends PureComponent {
           <div className='Navigation'>
             <NavigationButton 
               buttonClassName='HeaderButtons' 
-              onClick={async () => { await this.setState({ aboutPressed: !this.state.aboutPressed }); this.toggleComponents('AboutMe'); }} 
+              onClick={() => this.toggleComponents('ProjectDiscription') } 
+              styles={{ borderBottom: (this.state.activeButton === 'ProjectDiscription' && '1px solid #373940')}}
             >
-              <p className='Text'>About</p>
+              <p className='Text'>Home</p>
             </NavigationButton>
             <NavigationButton 
               buttonClassName='HeaderButtons' 
+              onClick={() => this.toggleComponents('AboutMe') }
+              styles={{ borderBottom: (this.state.activeButton === 'AboutMe' && '1px solid #373940')}}
+            >
+              <p className='Text'>About</p>
+            </NavigationButton>
+            <NavigationButton
+              value='Contact'
+              buttonClassName='HeaderButtons' 
               onClick={() => this.toggleComponents('Contact')} 
+              styles={{ borderBottom: (this.state.activeButton === 'Contact' && '1px solid #373940')}}
             >
               <p className='Text'>Contact</p>
             </NavigationButton>
           </div>
         </header>
         {this.state.showContactHeader && <Contact />}
-        {this.state.determineContent === 'ProjectDiscription' ? 
+        {this.state.determineContent === 'ProjectDiscription' &&  
           <ProjectDiscription 
             projectName={this.state.projectName} 
             projectDiscriptionText={this.state.projectDiscriptionText} 
           />
-          : 
-          <AboutMe />
         }
+        {this.state.determineContent === 'AboutMe' && <AboutMe /> }
       </div>
     )
   }
