@@ -4,7 +4,8 @@ import React, { PureComponent } from 'react'
 import ProjectDiscription from './ProjectDiscription'
 import NavigationButton from '../../utils/NavigationButton'
 import AboutMe from './AboutMe'
-import { ProjectConfig } from '../../ProjectConfig'
+import Contact from './Contact'
+import { PortfolioConfig } from '../../PortfolioConfig'
 
 // Styles
 import '../../css/leftView.css';
@@ -12,11 +13,12 @@ import '../../css/leftView.css';
 class LeftView extends PureComponent {
   constructor(props) {
     super(props)
-    this.Projects = ProjectConfig
+    this.Projects = PortfolioConfig
     this.state = {
       projectName: '', 
       projectDiscriptionText: '',
-      componentToShow: 'ProjectDiscription'
+      determineContent: 'ProjectDiscription',
+      showContactHeader: false
     }
   }
 
@@ -35,7 +37,11 @@ class LeftView extends PureComponent {
   }
 
   toggleComponents = (params) => {
-    this.state.componentToShow !== params ? this.setState({ componentToShow: params }) : this.setState({ componentToShow: 'ProjectDiscription' })
+    if(params === 'AboutMe')
+      this.state.determineContent !== params ? this.setState({ determineContent: params }) : this.setState({ determineContent: 'ProjectDiscription' })
+
+    if(params === 'Contact')
+      !this.state.showContactHeader ? this.setState({ showContactHeader: true }) : this.setState({ showContactHeader: false })
   }
 
   render() {
@@ -47,18 +53,19 @@ class LeftView extends PureComponent {
             <NavigationButton 
               buttonClassName='HeaderButtons' 
               onClick={() => this.toggleComponents('AboutMe')} 
-              contentClassName='Text'
-              content='About'
-            />
+            >
+              <p className='Text'>About</p>
+            </NavigationButton>
             <NavigationButton 
               buttonClassName='HeaderButtons' 
-              onClick={() => console.log('Contact was Clicked')} 
-              contentClassName='Text'
-              content='Contact'
-            />
+              onClick={() => this.toggleComponents('Contact')} 
+            >
+              <p className='Text'>Contact</p>
+            </NavigationButton>
           </div>
         </header>
-        {this.state.componentToShow === 'ProjectDiscription' ? 
+        {this.state.showContactHeader && <Contact />}
+        {this.state.determineContent === 'ProjectDiscription' ? 
           <ProjectDiscription 
             projectName={this.state.projectName} 
             projectDiscriptionText={this.state.projectDiscriptionText} 

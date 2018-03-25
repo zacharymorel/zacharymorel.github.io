@@ -1,4 +1,4 @@
-export const ProjectConfig = {
+export const PortfolioConfig = {
   "AvatarNutirionTracker" : {
     "projectName": "Avatar Nutirion Tracker",
     "projectImage": require('./images/AvatarNutritionTracker.png'),
@@ -16,6 +16,11 @@ export const ProjectConfig = {
     "projectLink1": "https://github.com/zacharymorel/momapp",
     "projectLink2": "https://github.com/zacharymorel/finalProject",
     "discription": 'Mother Native is an app that provides an easy task manager for mothers who are expecting and mothers that already have little ones. We aim to consider their needs with easy-to-use features for simplicity during the busiest times of their lives.',
-    
+  },
+  "ContactInfo": {
+    "Twitter": "https://twitter.com/ZacharyMorel?lang=en",
+    "GitHub": "https://github.com/zacharymorel",
+    "LinkedIn": "https://www.linkedin.com/in/zachary-morel-32a022140/",
+    "Telephone": "tel:813-263-9543"
   }
 }

@@ -2,14 +2,14 @@ import React, { PureComponent } from 'react'
 
 import NavigationButton from '../../utils/NavigationButton'
 import Shape from '../../utils/Shapes'
-import { ProjectConfig } from '../../ProjectConfig.js'
+import { PortfolioConfig } from '../../PortfolioConfig.js'
 
 import '../../css/rightView.css'
 import '../../css/shapes.css'
 
 class RightView extends PureComponent {
   ShapeClassNames = ['BlueSmallCircleOne', 'RedSmallCircle', 'BlueSmallCircleTwo', 'BlueOval', 'TriangleTopRight', 'LightOval', 'TriangleRight'] 
-  Projects = ProjectConfig
+  Projects = PortfolioConfig
 
   render() {
     const { text } = style
@@ -23,16 +23,15 @@ class RightView extends PureComponent {
               buttonClassName='ProjectLinkButtons' 
               onClick={() => window.open(this.Projects[this.props.currentProject].projectLink1)} 
               contentClassName='Text'
-              content={this.Projects[this.props.currentProject].contentText1}
-              contentTextSpecificStyle={text}
-            />
+            >
+              <p className='Text' style={text}>{this.Projects[this.props.currentProject].contentText1}</p>
+            </NavigationButton>
             <NavigationButton 
               buttonClassName='ProjectLinkButtons' 
               onClick={() => window.open(this.Projects[this.props.currentProject].projectLink2)}  
-              contentClassName='Text'
-              content={this.Projects[this.props.currentProject].contentText2}
-              contentTextSpecificStyle={text}
-            />
+            >
+              <p className='Text' style={text}>{this.Projects[this.props.currentProject].contentText2}</p>
+            </NavigationButton>
           </div>
         </div>
         { this.ShapeClassNames.map(item => <Shape key={item} className={item} /> ) }
