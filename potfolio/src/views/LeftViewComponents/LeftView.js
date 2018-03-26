@@ -9,6 +9,7 @@ import { PortfolioConfig } from '../../PortfolioConfig'
 
 // Styles
 import '../../css/leftView.css';
+import '../../css/leftViewMobile.css'
 
 class LeftView extends PureComponent {
   constructor(props) {

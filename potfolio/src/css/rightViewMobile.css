@@ -1,0 +1,8 @@
+@media (max-width: 1400px) {
+  .RightViewParent {
+    background: blue;
+    height: 100%;
+    overflow: scroll;
+    width: 100%;
+  }
+}
