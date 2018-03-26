@@ -16,7 +16,7 @@ class RightView extends PureComponent {
 
     return (
       <div className='RightViewParent'>
-        <section className='RighViewContent'>        
+        <section key={this.props.currentProject} className='RighViewContent'>        
           <div key={this.props.currentProject} className='ImageParent1' > 
             <img className='Images' alt='Tracker should be here...' src={this.Projects[this.props.currentProject].projectImage}></img>
             <div className='ProjectButtons'>

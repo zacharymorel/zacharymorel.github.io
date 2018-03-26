@@ -5,7 +5,7 @@
   width: 40%;
 }
 
-@keyframes fadeIn {
+/* @keyframes fadeIn {
 	from {
 		opacity: 0;
 		transform: translateY(0);
@@ -15,17 +15,17 @@
 		opacity: 1;
 		transform: translateY(1);
 	}
-}
+} */
 
 .RighViewContent { 
-  animation: fadeIn 2s ease-in-out 0s;
+  animation: slideUpTop 1s ease-in-out 6s;
   height: 100%;
   position: absolute;
   width: 100%;
   z-index: 6;
 }
 
-@keyframes slideUp {
+@keyframes slideUpTop {
 	0% {
 		opacity: 1;
 		transform: translateY(0%);
@@ -33,12 +33,24 @@
 
 	100% {
 		opacity: 0;
-		transform: translateY(-300%);
+		transform: translateY(-50%);
+	}
+}
+
+@keyframes SlideUpFromBottom {
+	0% {
+		opacity: 0;
+		transform: translateY(50%);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0%);
 	}
 }
 
 .ImageParent1 {
-  animation: fadeOut 1s ease-out 6s;
+  animation: SlideUpFromBottom 1s ease-out 0s;
   align-items: center; 
   display: flex; 
   flex-direction: column;

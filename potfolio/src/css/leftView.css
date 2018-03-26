@@ -53,7 +53,6 @@
 }
 
 .ProjectDiscription {
-  /* background-color: greenyellow; */
   align-items: flex-start;
   display: flex;
   flex-direction: column;
@@ -62,14 +61,13 @@
   width: 70%
 }
 
-.ProjectInfo {
-  animation: slideUp 1s linear 6s;
-  display: flex;
-  height: 10%;
-  flex-direction: row;
+.ProjectContainer {
+  animation: slideUpFromBottom 1s linear 0s;
+  height: 100%;
+  width: 100%;
 }
 
-@keyframes fadeOut {
+/* @keyframes fadeOut {
 	0% {
 		opacity: 1;
 		transform: scale(0%);
@@ -79,19 +77,60 @@
 		opacity: 0;
 		transform: scale(100%);
 	}
+} */
+
+@keyframes slideUpFromBottom {
+	0% {
+    opacity: 0;
+		transform: translateY(50%);
+	}
+
+	100% {
+    opacity: 1;
+		transform: translateY(0%);
+	}
+}
+
+@keyframes slideUp {
+	0% {
+		transform: translateY(0%);
+	}
+
+	100% {
+		transform: translateY(-300%);
+	}
+}
+
+@keyframes slideUpOpacity {
+	0% {
+		opacity: 1;
+		transform: translateY(0%);
+	}
+
+	100% {
+		opacity: 0;
+		transform: translateY(-100%);
+	}
 }
 
 .ProjectTitle {
-  animation: fadeOut 1s ease-out 6s;
+  /* animation: fadeOut 1s ease-out 6s; */
+  animation: slideUpOpacity 1s linear 6s;
   display: flex;
   height: 10%;
   flex-direction: row;
 }
 
 .ProjectTitle .ProjectText {
-  animation: fadeOut 1s ease-out 6s;
   height: 10%;
   font-size: 40px;
+}
+
+.ProjectInfo {
+  animation: slideUp 1s linear 6s;
+  display: flex;
+  height: 10%;
+  flex-direction: row;
 }
 
 .ProjectInfo h1 {

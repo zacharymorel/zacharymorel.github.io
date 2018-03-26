@@ -12,14 +12,14 @@ class Main extends Component {
     super(props)
     this.interval = setInterval(() => this.updateProject(), 7000)
     this.state = {
-      currentProject: 'AvatarNutirionTracker'
+      currentProject: 'AvatarNutritionTracker'
     }
   }
 
   updateProject = () => {
-    (this.state.currentProject === 'AvatarNutirionTracker') ?
+    (this.state.currentProject === 'AvatarNutritionTracker') ?
       this.setState({ currentProject: 'MotherNative' }) :
-      this.setState({ currentProject: 'AvatarNutirionTracker' })
+      this.setState({ currentProject: 'AvatarNutritionTracker' })
   }
 
   render() {

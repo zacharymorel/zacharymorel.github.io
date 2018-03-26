@@ -1,6 +1,6 @@
 export const PortfolioConfig = {
-  "AvatarNutirionTracker" : {
-    "projectName": "Avatar Nutirion Tracker",
+  "AvatarNutritionTracker" : {
+    "projectName": "Avatar Nutrition Tracker",
     "projectImage": require('./images/AvatarNutritionTracker.png'),
     "contentText1": "Apple Store",
     "contentText2": "Google Play Store",
