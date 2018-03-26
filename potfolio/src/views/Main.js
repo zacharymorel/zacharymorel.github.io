@@ -5,7 +5,7 @@ import LeftView from './LeftViewComponents/LeftView'
 import RightView from './RightViewComponents/RightView';
 
 // Styles
-import '../css/App.css';
+import '../css/main.css';
 
 class Main extends Component {
   constructor(props) {

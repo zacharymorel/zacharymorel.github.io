@@ -50,6 +50,8 @@ class ProjectDiscription extends Component {
   determineUpdate = (key, fillerKey) => ( key ? key : fillerKey )
 
   render () {
+    const { firstFiller, secondFiller } = styles
+
     return (
       <div className='ProjectDiscriptionParent'>
         <section className='ProjectDiscription'>
@@ -59,17 +61,31 @@ class ProjectDiscription extends Component {
               <h1 className='ProjectText' style={{color: '#FCA311', paddingLeft: 6}}>{this.wordToStyle}</h1>
             </div>
           </div>
-          <SpaceFiller styles={{backgroundColor: '#fff', height: '30%', position: 'relative', width: '100%', zIndex: 5}} />
+          <SpaceFiller styles={firstFiller} />
           <div key={this.determineUpdate(this.props.projectDiscriptionText, 'projectDiscriptionText')} className='ProjectContainer'>
             <div key={this.determineUpdate(this.props.projectDiscriptionText, 'projectDiscriptionText')} className='ProjectInfo'>
               <p className='ProjectText' style={{fontSize: 15}}>{this.props.projectDiscriptionText}</p>
             </div>
           </div>
-          <SpaceFiller styles={{height: '2%', width: '100%'}}/>
+          <SpaceFiller styles={secondFiller}/>
           <ProgressBar progress={this.state.progressBarCalc} />
         </section>
       </div>
     )
+  }
+}
+
+const styles = {
+  firstFiller: {
+    backgroundColor: '#fff', 
+    height: '30%', 
+    position: 'relative', 
+    width: '100%', 
+    zIndex: 5
+  },
+  secondFiller: {
+    height: '2%', 
+    width: '100%'
   }
 }
 

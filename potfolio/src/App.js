@@ -5,7 +5,7 @@ import React, { Component } from 'react';
 import Main from './views/Main';
 
 // Styles
-import './css/App.css';
+import './css/main.css';
 
 class App extends Component {
   render() {
