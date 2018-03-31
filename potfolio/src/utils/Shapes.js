@@ -2,9 +2,9 @@ import React from 'react'
 
 import '../css/shapes.css'
 
-const Shape = (props) => {
+const Shape = ({className}) => {
   return (
-    <div className={props.className}/>
+    <div className={className}/>
   )
 }
 

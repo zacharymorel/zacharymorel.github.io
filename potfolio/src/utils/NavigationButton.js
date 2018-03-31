@@ -1,10 +1,9 @@
 import React from 'react'
 
-const NavigationButton = (props) => {
-
+const NavigationButton = ({buttonClassName, styles, onClick, children}) => {
   return (
-    <button className={props.buttonClassName} style={props.styles} onClick={props.onClick}>
-      {props.children}
+    <button className={buttonClassName} style={styles} onClick={onClick}>
+      {children}
     </button>
   )
 }

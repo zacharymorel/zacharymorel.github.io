@@ -24,7 +24,6 @@ class RightView extends PureComponent {
               <NavigationButton 
                 buttonClassName='ProjectLinkButtons' 
                 onClick={() => window.open(this.Projects[this.props.currentProject].projectLink1)} 
-                contentClassName='Text'
               >
                 <p className='Text' style={text}>{this.Projects[this.props.currentProject].contentText1}</p>
               </NavigationButton>

@@ -1,8 +1,8 @@
 import React from 'react'
 
-const SpaceFiller = (props) => {
+const SpaceFiller = ({styles}) => {
   return (
-    <div style={props.styles} />
+    <div style={styles} />
   )
 }
 
