@@ -6,7 +6,7 @@ import { PortfolioConfig } from '../../PortfolioConfig.js'
 
 import '../../css/rightView.css'
 import '../../css/shapes.css'
-import '../../css/rightViewMobile.css'
+import '../../css/mobile/rightViewMobile.css'
 
 class RightView extends PureComponent {
   ShapeClassNames = ['BlueSmallCircleOne', 'RedSmallCircle', 'BlueSmallCircleTwo', 'BlueOval', 'TriangleTopRight', 'LightOval', 'TriangleRight'] 
