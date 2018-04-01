@@ -26,6 +26,7 @@
   
   .RightViewParent {
     height: 100vh;
+    overflow: hidden;
     width: 100%;
   }
 
@@ -38,6 +39,7 @@
 
   .ImageParent {
     animation: SlideUpFromRight 1s ease-out 0s;
+    overflow: hidden;
     width: 100%;
   }
 
