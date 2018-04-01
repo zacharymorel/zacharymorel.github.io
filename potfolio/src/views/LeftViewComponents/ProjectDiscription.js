@@ -10,7 +10,7 @@ class ProjectDiscription extends Component {
   constructor(props) {
     super(props)
     this.componentWindowWidth = window.outerWidth
-    this.wordToStyle 
+    this.wordToStyle = ''
     this.state = {
       progressBarCalc: 0
     }

@@ -81,6 +81,7 @@
   }
 
   .AboutMeParent {
+    overflow: hidden;
     padding: 12% 1% 0% 5%;
   } 
 

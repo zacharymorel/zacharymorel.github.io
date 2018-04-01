@@ -4,7 +4,7 @@ import SpaceFiller from '../../utils/SpaceFiller'
 import '../../css/leftView.css'
 import '../../css/mobile/leftViewMobile.css'
 
-const AboutMe = (props) => {
+const AboutMe = () => {
   const { category, firstFiller, secondFiller} = styles
   return (
     <div className='AboutMeParent'>
