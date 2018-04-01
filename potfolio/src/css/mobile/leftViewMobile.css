@@ -79,4 +79,21 @@
     animation: fadeOut 1s linear 6s;
     height: 100%;
   }
+
+  .AboutMeParent {
+    padding: 12% 1% 0% 5%;
+  } 
+
+  .ImageAndFactsContainer {
+    border-left: 2px solid #373940;
+    border-top: 2px solid #373940;
+    height: 80vh;
+    padding: 2%;
+  }
+
+  .Image {
+    border-radius: 5px;
+    height: 35%;
+    width: 55%;
+  }
 }
