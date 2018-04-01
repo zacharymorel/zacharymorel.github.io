@@ -1,0 +1,14 @@
+@media (max-width: 415px) {
+  body {
+    margin: 0;
+    overflow: scroll;
+    padding: 0;
+  }
+  
+  .Text {
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+  }
+  
+}

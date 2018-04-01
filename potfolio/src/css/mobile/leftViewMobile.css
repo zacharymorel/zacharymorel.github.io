@@ -1,9 +1,7 @@
-@media (max-width: 1400px) {
+@media (max-width: 415px) {
   .LeftViewParent {
     background: #fa8072;
+    height: 100%;
     width: 100%;
-    /* flex-direction: row; */
-    /* overflow: scroll; */
-
   }
 }

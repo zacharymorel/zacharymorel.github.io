@@ -1,11 +1,13 @@
-@media (max-width: 1400px) {
+@media (max-width: 415px) {
   .App {
     height: 100%;
+    width: 100%;
   } 
 
   .MainParent {
     display: flex;
     flex-flow: row wrap;
+    /* flex-direction: column; */
     height: 100%;
     width: 100%;
   }
