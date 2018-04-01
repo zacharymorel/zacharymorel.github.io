@@ -7,7 +7,6 @@
   .MainParent {
     display: flex;
     flex-flow: row wrap;
-    /* flex-direction: column; */
     height: 100%;
     width: 100%;
   }
