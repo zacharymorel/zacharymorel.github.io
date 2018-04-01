@@ -1,8 +1,16 @@
 @media (max-width: 415px) {
-  
   .LeftViewParent {
-    background: #fa8072;
     height: 100%;
     width: 100%;
   }
+
+  .Header {
+    flex-direction: column;
+  }
+  
+  .HeaderTitle {
+    margin: 0 0 5px 0;
+  }
+
+  /* TODO: work on Animations of Porject Texts next to Fade in => Out rather than Sliding donw => up */
 }
