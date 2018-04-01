@@ -46,7 +46,6 @@
 }
 
 .LeftViewParent {
-  background: #fa8072;
   display: flex;
   flex-direction: column;
   overflow: scroll; 
@@ -116,7 +115,6 @@
 }
 
 .ProjectTitle {
-  /* animation: fadeOut 1s ease-out 6s; */
   animation: slideUpOpacity 1s linear 6s;
   display: flex;
   height: 10%;
@@ -201,15 +199,3 @@
   height: 100%;
   transition: width 1s ease-in-out 0s;
 }
-
-/* @keyframes fadeOut {
-	0% {
-		opacity: 1;
-		transform: scale(0%);
-	}
-
-	100% {
-		opacity: 0;
-		transform: scale(100%);
-	}
-} */

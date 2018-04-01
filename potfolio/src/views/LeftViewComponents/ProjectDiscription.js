@@ -9,6 +9,7 @@ import '../../css/mobile/leftViewMobile.css'
 class ProjectDiscription extends Component {
   constructor(props) {
     super(props)
+    this.componentWindowWidth = window.outerWidth
     this.wordToStyle 
     this.state = {
       progressBarCalc: 0
@@ -52,7 +53,6 @@ class ProjectDiscription extends Component {
 
   render () {
     const { firstFiller, secondFiller } = styles
-
     return (
       <div className='ProjectDiscriptionParent'>
         <section className='ProjectDiscription'>
@@ -62,7 +62,7 @@ class ProjectDiscription extends Component {
               <h1 className='ProjectText' style={{color: '#FCA311', paddingLeft: 6}}>{this.wordToStyle}</h1>
             </div>
           </div>
-          <SpaceFiller styles={firstFiller} />
+          <SpaceFiller styles={this.componentWindowWidth < 415 ? null : firstFiller} />
           <div key={this.determineUpdate(this.props.projectDiscriptionText, 'projectDiscriptionText')} className='ProjectContainer'>
             <div key={this.determineUpdate(this.props.projectDiscriptionText, 'projectDiscriptionText')} className='ProjectInfo'>
               <p className='ProjectText' style={{fontSize: 15}}>{this.props.projectDiscriptionText}</p>

@@ -38,8 +38,8 @@ class LeftView extends PureComponent {
   }
 
   toggleContent = (content, isShowing) => {
-    content === null ? this.setState({ showContactHeader: isShowing }) :
-      this.setState({ determineContent: content, showContactHeader: isShowing })
+    content ? this.setState({ determineContent: content, showContactHeader: isShowing }) :
+    this.setState({ showContactHeader: isShowing }) 
   }
 
   render() {
