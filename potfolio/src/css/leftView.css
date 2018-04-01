@@ -1,3 +1,50 @@
+
+@keyframes slideIn {
+	from {
+		opacity: 0;
+		transform: translateY(0);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateY(1);
+	}
+}
+
+@keyframes slideUpFromBottom {
+	0% {
+    opacity: 0;
+		transform: translateY(50%);
+	}
+
+	100% {
+    opacity: 1;
+		transform: translateY(0%);
+	}
+}
+
+@keyframes slideUp {
+	0% {
+		transform: translateY(0%);
+	}
+
+	100% {
+		transform: translateY(-300%);
+	}
+}
+
+@keyframes slideUpOpacity {
+	0% {
+		opacity: 1;
+		transform: translateY(0%);
+	}
+
+	100% {
+		opacity: 0;
+		transform: translateY(-100%);
+	}
+}
+
 .LeftViewParent {
   display: flex;
   flex-direction: column;
@@ -67,40 +114,6 @@
   width: 100%;
 }
 
-@keyframes slideUpFromBottom {
-	0% {
-    opacity: 0;
-		transform: translateY(50%);
-	}
-
-	100% {
-    opacity: 1;
-		transform: translateY(0%);
-	}
-}
-
-@keyframes slideUp {
-	0% {
-		transform: translateY(0%);
-	}
-
-	100% {
-		transform: translateY(-300%);
-	}
-}
-
-@keyframes slideUpOpacity {
-	0% {
-		opacity: 1;
-		transform: translateY(0%);
-	}
-
-	100% {
-		opacity: 0;
-		transform: translateY(-100%);
-	}
-}
-
 .ProjectTitle {
   /* animation: fadeOut 1s ease-out 6s; */
   animation: slideUpOpacity 1s linear 6s;
@@ -154,18 +167,6 @@
 .Categories {
   margin: 8px 0;
   text-decoration: underline overline #FCA311;
-}
-
-@keyframes slideIn {
-	from {
-		opacity: 0;
-		transform: translateY(0);
-	}
-
-	to {
-		opacity: 1;
-		transform: translateY(1);
-	}
 }
 
 .ContactParent {

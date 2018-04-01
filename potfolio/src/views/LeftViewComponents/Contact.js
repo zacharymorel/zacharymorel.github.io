@@ -3,6 +3,7 @@ import NavigationButton from '../../utils/NavigationButton'
 import { PortfolioConfig } from '../../PortfolioConfig'
 
 import '../../css/leftView.css'
+import '../../css/mobile/leftViewMobile.css'
 
 const Contact = () => {
   return (
