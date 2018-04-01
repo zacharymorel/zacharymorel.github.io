@@ -9,29 +9,32 @@ class Header extends Component {
     super(props)
     this.state = {
       activeButton: 'ProjectDiscription',
-      showContactHeader: false,
     }
   }
 
   toggleComponents = (params) => {
     if(params === 'ProjectDiscription') {
       if(this.props.determineContent !== params ) {
-        this.setState({ activeButton: params, showContactHeader: false }) 
-        this.props.headerDetermineContentCallBack(params)
+        this.setState({ activeButton: params }) 
+        this.props.toggleContent(params, false)
       }
     }
 
     if(params === 'AboutMe') {
       if(this.props.determineContent !== params ) {
-        this.setState({ activeButton: params, showContactHeader: false }) 
-        this.props.headerDetermineContentCallBack(params)
+        this.setState({ activeButton: params }) 
+        this.props.toggleContent(params, false)
       }
     }
 
-    if(params === 'Contact')
-      !this.state.showContactHeader ? 
-        this.setState({ activeButton: params, showContactHeader: true }) : 
-        this.setState({ showContactHeader: false })
+    if(params === 'Contact') {
+      if(!this.state.showContactHeader) {
+        this.setState({ activeButton: params })
+        this.props.toggleContent(null, true)
+      }
+      else 
+        this.props.toggleContent(null, false)
+    }
   }
 
   render() {
@@ -54,7 +57,6 @@ class Header extends Component {
             <p className='Text'>About</p>
           </NavigationButton>
           <NavigationButton
-            value='Contact'
             buttonClassName='HeaderButtons' 
             onClick={() => this.toggleComponents('Contact')} 
             styles={{ borderBottom: (this.state.activeButton === 'Contact' && '1px solid #373940')}}

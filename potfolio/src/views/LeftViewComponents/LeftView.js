@@ -19,6 +19,7 @@ class LeftView extends PureComponent {
       projectName: '', 
       projectDiscriptionText: '',
       determineContent: 'ProjectDiscription',
+      showContactHeader: false,
     }
   }
 
@@ -36,14 +37,15 @@ class LeftView extends PureComponent {
     }
   }
 
-  headerDetermineContentCallBack = (params) => {
-    this.setState({ determineContent: params })
+  toggleContent = (content, isShowing) => {
+    content === null ? this.setState({ showContactHeader: isShowing }) :
+      this.setState({ determineContent: content, showContactHeader: isShowing })
   }
 
   render() {
     return (
       <div className='LeftViewParent'>
-        <Header headerDetermineContentCallBack={this.headerDetermineContentCallBack} />
+        <Header toggleContent={this.toggleContent} />
         {this.state.showContactHeader && <Contact />}
         {this.state.determineContent === 'ProjectDiscription' &&  
           <ProjectDiscription 
