@@ -81,7 +81,6 @@
   }
 
   .AboutMeParent {
-    overflow: hidden;
     padding: 12% 1% 0% 5%;
   } 
 
@@ -101,15 +100,10 @@
 }
 
 @media (max-height: 700px) and (max-width: 415px) {
-  .AboutMeParent {
-    overflow: hidden;
-  } 
-
   .ImageAndFactsContainer {
     border-left: 2px solid #373940;
     border-top: 2px solid #373940;
     height: 70vh;
-    overflow: hidden;
     padding: 2%;
   }
 

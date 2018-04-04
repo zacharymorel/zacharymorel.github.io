@@ -25,7 +25,7 @@
 .RightViewParent {
   background-color: #F5D0C5;
   height: 100%;
-  overflow: scroll;
+  overflow: hidden;
   width: 40%;
 }
 

@@ -33,13 +33,11 @@
   .RighViewContent { 
     animation: slideUpLeft 1s ease-in-out 6s;
     height: 100%;
-    overflow: hidden;
     width: 100%;
   }
 
   .ImageParent {
     animation: SlideUpFromRight 1s ease-out 0s;
-    overflow: hidden;
     width: 100%;
   }
 
