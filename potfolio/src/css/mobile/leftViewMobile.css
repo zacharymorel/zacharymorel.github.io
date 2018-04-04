@@ -100,7 +100,7 @@
 
 }
 
-@media (max-height: 700px) {
+@media (max-height: 700px) and (max-width: 415px) {
   .AboutMeParent {
     overflow: hidden;
   } 
