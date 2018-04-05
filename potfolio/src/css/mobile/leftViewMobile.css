@@ -77,7 +77,7 @@
 
   .ProjectInfo {
     animation: fadeOut 1s linear 6s;
-    height: 100vh;
+    height: 100%;
   }
 
   .AboutMeParent {
