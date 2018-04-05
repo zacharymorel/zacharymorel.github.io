@@ -110,7 +110,7 @@
 .ProjectContainer {
   animation: slideUpFromBottom 1s linear 0s;
   height: 100%;
-  width: 100vw;
+  width: 100%;
 }
 
 .ProjectTitle {
