@@ -8,14 +8,14 @@
   
     100% {
       opacity: 0;
-      transform: translateX(50%);
+      transform: translateX(-50%);
     }
   }
   
   @keyframes SlideUpFromRight {
     0% {
       opacity: 0;
-      transform: translateX(-50%);
+      transform: translateX(50%);
     }
   
     100% {
