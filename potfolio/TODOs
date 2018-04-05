@@ -1,2 +1,0 @@
-TODO: BUG => Figure out why the views are dynamically changing height when scrolling.
-  - Look at leftParentView and/or higher components. 

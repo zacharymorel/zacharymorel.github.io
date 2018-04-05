@@ -47,13 +47,13 @@ class LeftView extends PureComponent {
       <div className='LeftViewParent'>
         <Header toggleContent={this.toggleContent} />
         {this.state.showContactHeader && <Contact />}
-        {this.state.determineContent === 'ProjectDiscription' ?  
+        {this.state.determineContent === 'ProjectDiscription' &&  
           <ProjectDiscription 
             projectName={this.state.projectName} 
             projectDiscriptionText={this.state.projectDiscriptionText} 
           />
-        :
-        this.state.determineContent === 'AboutMe' && <AboutMe /> }
+        }
+        {this.state.determineContent === 'AboutMe' && <AboutMe /> }
       </div>
     )
   }

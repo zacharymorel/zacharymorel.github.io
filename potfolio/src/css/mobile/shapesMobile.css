@@ -5,7 +5,7 @@
   }
 }
 
-@media (max-height: 830px) and (max-width: 415px) {
+@media (max-height: 830px) {
   .TriangleTopRight {
     border-left: 100px solid transparent;
     border-top: 100px solid #F4FAFF;
@@ -29,13 +29,13 @@
   }
 }
 
-@media (max-height: 800px) and (max-width: 415px) {
+@media (max-height: 800px) {
   .TriangleRight {
     top: 800px;
   }
 }
 
-@media (max-height: 700px) and (max-width: 415px) {
+@media (max-height: 700px) {
   .BlueSmallCircleTwo {
     left: -30px;
     top: -300px;
