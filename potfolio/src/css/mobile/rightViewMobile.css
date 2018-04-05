@@ -32,13 +32,13 @@
 
   .RighViewContent { 
     animation: slideUpLeft 1s ease-in-out 6s;
-    height: 100%;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
   }
 
   .ImageParent {
     animation: SlideUpFromRight 1s ease-out 0s;
-    width: 100%;
+    width: 100vw;
   }
 
   .Images {
