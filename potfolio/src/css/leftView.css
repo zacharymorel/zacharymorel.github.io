@@ -94,7 +94,7 @@
   animation: slideIn 2s ease-in-out 0s;
   align-items: center;
   display: flex;
-  height: 100vh;
+  height: 100%;
   justify-content: center;
 }
 
@@ -109,7 +109,7 @@
 
 .ProjectContainer {
   animation: slideUpFromBottom 1s linear 0s;
-  height: 100vh;
+  height: 100%;
   width: 100vw;
 }
 

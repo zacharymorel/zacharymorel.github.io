@@ -24,7 +24,7 @@
   }
 
   .LeftViewParent {
-    height: 100vh;
+    height: 100%;
     width: 100%;
   }
 
@@ -49,7 +49,7 @@
   .ProjectDiscriptionParent {
     align-items: center;
     display: flex;
-    height: 100vh;
+    height: 100%;
     justify-content: center;
   }
   
@@ -71,7 +71,7 @@
   }
 
   .ProjectTitle .ProjectText {
-    height: 100vh;
+    height: 100%;
     font-size: 30px;
   }
 
