@@ -1,5 +1,5 @@
 @media (max-width: 415px) {
-    @keyframes fadeIn {
+  @-webkit-keyframes fadeIn {
     0% {
       opacity: 0;
       transform: scale(0%);
@@ -8,6 +8,102 @@
     100% {
       opacity: 1;
       transform: scale(100%);
+    }
+  }
+
+  @-moz-keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: scale(0%);
+    }
+
+    100% {
+      opacity: 1;
+      transform: scale(100%);
+    }
+  }
+
+  @-o-keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: scale(0%);
+    }
+
+    100% {
+      opacity: 1;
+      transform: scale(100%);
+    }
+  }
+
+  @-ms-keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: scale(0%);
+    }
+
+    100% {
+      opacity: 1;
+      transform: scale(100%);
+    }
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: scale(0%);
+    }
+
+    100% {
+      opacity: 1;
+      transform: scale(100%);
+    }
+  }
+
+  @-webkit-keyframes fadeOut {
+    0% {
+      opacity: 1;
+      transform: scale(100%);
+    }
+
+    100% {
+      opacity: 0;
+      transform: scale(0%);
+    }
+  }
+
+  @-moz-keyframes fadeOut {
+    0% {
+      opacity: 1;
+      transform: scale(100%);
+    }
+
+    100% {
+      opacity: 0;
+      transform: scale(0%);
+    }
+  }
+
+  @-o-keyframes fadeOut {
+    0% {
+      opacity: 1;
+      transform: scale(100%);
+    }
+
+    100% {
+      opacity: 0;
+      transform: scale(0%);
+    }
+  }
+
+  @-ms-keyframes fadeOut {
+    0% {
+      opacity: 1;
+      transform: scale(100%);
+    }
+
+    100% {
+      opacity: 0;
+      transform: scale(0%);
     }
   }
 
@@ -59,12 +155,20 @@
   
 
   .ProjectContainer {
+    -moz-animation: fadeIn 1s linear 0s;
+    -ms-animation: fadeIn 1s linear 0s;
+    -o-animation: fadeIn 1s linear 0s;
+    -webkit-animation: fadeIn 1s linear 0s;
     animation: fadeIn 1s linear 0s;
     height: 40%;
     width: 100%;
   }
   
   .ProjectTitle {
+    -moz-animation: fadeOut 1s linear 6s;
+    -ms-animation: fadeOut 1s linear 6s;
+    -o-animation: fadeOut 1s linear 6s;
+    -webkit-animation: fadeOut 1s linear 6s;
     animation: fadeOut 1s linear 6s;
     height: 40%;
     flex-flow: row wrap;
