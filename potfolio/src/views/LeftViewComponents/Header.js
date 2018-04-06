@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import NavigationButton from '../../utils/NavigationButton'
 
 import '../../css/leftView.css'
-import '../../css/mobile/leftViewMobile.css'
+// import '../../css/mobile/leftViewMobile.css'
 
 class Header extends Component {
   constructor(props) {

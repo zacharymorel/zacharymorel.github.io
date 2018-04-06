@@ -6,7 +6,7 @@ import RightView from './RightViewComponents/RightView';
 
 // Styles
 import '../css/main.css';
-import '../css/mobile/mainMobile.css'
+// import '../css/mobile/mainMobile.css'
 
 class Main extends Component {
   constructor(props) {

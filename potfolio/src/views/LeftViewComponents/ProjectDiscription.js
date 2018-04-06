@@ -4,7 +4,7 @@ import SpaceFiller from '../../utils/SpaceFiller'
 
 // Styles
 import '../../css/leftView.css'
-import '../../css/mobile/leftViewMobile.css'
+// import '../../css/mobile/leftViewMobile.css'
 
 class ProjectDiscription extends Component {
   constructor(props) {
