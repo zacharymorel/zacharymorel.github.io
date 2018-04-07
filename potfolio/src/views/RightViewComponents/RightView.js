@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react'
 
-import NavigationButton from '../../utils/NavigationButton'
+import ButtonWrapper from '../../utils/ButtonWrapper'
 import Shape from '../../utils/Shapes'
 import { PortfolioConfig } from '../../PortfolioConfig.js'
 
@@ -22,18 +22,18 @@ class RightView extends PureComponent {
           <div key={this.props.currentProject} className='ImageParent' > 
             <img className='Images' alt='Tracker should be here...' src={this.Projects[this.props.currentProject].projectImage}></img>
             <div className='ProjectButtons'>
-              <NavigationButton 
+              <ButtonWrapper 
                 buttonClassName='ProjectLinkButtons' 
                 onClick={() => window.open(this.Projects[this.props.currentProject].projectLink1)} 
               >
                 <p className='Text' style={text}>{this.Projects[this.props.currentProject].contentText1}</p>
-              </NavigationButton>
-              <NavigationButton 
+              </ButtonWrapper>
+              <ButtonWrapper 
                 buttonClassName='ProjectLinkButtons' 
                 onClick={() => window.open(this.Projects[this.props.currentProject].projectLink2)}  
               >
                 <p className='Text' style={text}>{this.Projects[this.props.currentProject].contentText2}</p>
-              </NavigationButton>
+              </ButtonWrapper>
             </div>
           </div>
         </section>

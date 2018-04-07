@@ -1,6 +1,6 @@
 import React from 'react'
 
-const NavigationButton = ({buttonClassName, styles, onClick, children}) => {
+const ButtonWrapper = ({buttonClassName, styles, onClick, children}) => {
   return (
     <button className={buttonClassName} style={styles} onClick={onClick}>
       {children}
@@ -8,4 +8,4 @@ const NavigationButton = ({buttonClassName, styles, onClick, children}) => {
   )
 }
 
-export default NavigationButton
+export default ButtonWrapper

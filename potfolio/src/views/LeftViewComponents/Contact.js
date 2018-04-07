@@ -1,5 +1,5 @@
 import React from 'react'
-import NavigationButton from '../../utils/NavigationButton'
+import ButtonWrapper from '../../utils/ButtonWrapper'
 import { PortfolioConfig } from '../../PortfolioConfig'
 
 import '../../css/leftView.css'
@@ -9,30 +9,30 @@ const Contact = () => {
   return (
     <div className='ContactParent'>
       <section className='LinksContainer'>
-        <NavigationButton
+        <ButtonWrapper
           buttonClassName='HeaderButtons'
           onClick={() => window.open(PortfolioConfig.ContactInfo.Twitter)}
         >
           <p className='Text'>Twitter</p>
-        </NavigationButton>
-        <NavigationButton
+        </ButtonWrapper>
+        <ButtonWrapper
           buttonClassName='HeaderButtons'
           onClick={() => window.open(PortfolioConfig.ContactInfo.GitHub)}
         >
           <p className='Text'>GitHub</p>
-        </NavigationButton>
-        <NavigationButton
+        </ButtonWrapper>
+        <ButtonWrapper
           buttonClassName='HeaderButtons'
           onClick={() => window.open(PortfolioConfig.ContactInfo.LinkedIn)}
         >
           <p className='Text'>LinkedIn</p>
-        </NavigationButton>
-        <NavigationButton
+        </ButtonWrapper>
+        <ButtonWrapper
           buttonClassName='HeaderButtons'
           onClick={() => window.open(PortfolioConfig.ContactInfo.Telephone)}
         >
           <p className='Text'>TEL</p>
-        </NavigationButton>
+        </ButtonWrapper>
       </section>
     </div>
   )

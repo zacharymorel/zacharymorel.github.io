@@ -9,24 +9,11 @@ import '../css/main.css';
 // import '../css/mobile/mainMobile.css'
 
 class Main extends Component {
-  constructor(props) {
-    super(props)
-    this.interval = setInterval(() => this.updateProject(), 7000)
-    this.state = {
-      currentProject: 'AvatarNutritionTracker'
-    }
-  }
-
-  updateProject = () => {
-    (this.state.currentProject === 'AvatarNutritionTracker') ?
-      this.setState({ currentProject: 'MotherNative' }) :
-      this.setState({ currentProject: 'AvatarNutritionTracker' })
-  }
 
   render() {
     return (
       <div className='MainParent'>
-        <LeftView currentProject={this.state.currentProject} />
+        {/*<LeftView currentProject={this.state.currentProject} />*/}
         <RightView currentProject={this.state.currentProject} />
       </div>
     )

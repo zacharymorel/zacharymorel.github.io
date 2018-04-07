@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import NavigationButton from '../../utils/NavigationButton'
+import ButtonWrapper from '../../utils/ButtonWrapper'
 
 import '../../css/leftView.css'
 // import '../../css/mobile/leftViewMobile.css'
@@ -39,28 +39,27 @@ class Header extends Component {
       <header className='Header'>
         <h1 className='HeaderTitle'>Zachary Morel.</h1>
         <div className='Navigation'>
-          <NavigationButton 
+          <ButtonWrapper 
             buttonClassName='HeaderButtons' 
             onClick={() => this.toggleComponents('ProjectDiscription') } 
             styles={{ borderBottom: (this.state.activeButton === 'ProjectDiscription' && '1px solid #373940')}}
           >
-            <p className='Text'>Home</p>
-          </NavigationButton>
-          <NavigationButton 
+            <p className='Text'>Greetings</p>
+          </ButtonWrapper>
+          <ButtonWrapper 
             buttonClassName='HeaderButtons' 
             onClick={() => this.toggleComponents('AboutMe') }
             styles={{ borderBottom: (this.state.activeButton === 'AboutMe' && '1px solid #373940')}}
           >
-            <p className='Text'>About</p>
-          </NavigationButton>
-          <NavigationButton
-            value='Contact'
+            <p className='Text'>Work</p>
+          </ButtonWrapper>
+          <ButtonWrapper
             buttonClassName='HeaderButtons' 
             onClick={() => this.toggleComponents('Contact')} 
             styles={{ borderBottom: (this.state.activeButton === 'Contact' && '1px solid #373940')}}
           >
             <p className='Text'>Contact</p>
-          </NavigationButton>
+          </ButtonWrapper>
         </div>
       </header>
     )
