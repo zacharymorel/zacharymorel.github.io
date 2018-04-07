@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import ProgressBar from './ProgressBar'
-import SpaceFiller from '../../utils/SpaceFiller'
+import SpaceFiller from '../../utility_components/SpaceFiller'
 
 // Styles
 import '../../css/leftView.css'

@@ -1,7 +1,7 @@
 import React, { PureComponent } from 'react'
 
-import ButtonWrapper from '../../utils/ButtonWrapper'
-import Shape from '../../utils/Shapes'
+import ButtonWrapper from '../../utility_components/ButtonWrapper'
+import Shape from '../../utility_components/Shapes'
 import { PortfolioConfig } from '../../PortfolioConfig.js'
 
 import '../../css/rightView.css'

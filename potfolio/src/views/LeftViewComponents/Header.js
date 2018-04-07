@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import ButtonWrapper from '../../utils/ButtonWrapper'
+import ButtonWrapper from '../../utility_components/ButtonWrapper'
 
 import '../../css/leftView.css'
 // import '../../css/mobile/leftViewMobile.css'
