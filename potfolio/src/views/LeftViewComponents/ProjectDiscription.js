@@ -3,7 +3,6 @@ import ProgressBar from './ProgressBar'
 import SpaceFiller from '../../utility_components/SpaceFiller'
 
 // Styles
-import '../../css/leftView.css'
 // import '../../css/mobile/leftViewMobile.css'
 
 class ProjectDiscription extends Component {

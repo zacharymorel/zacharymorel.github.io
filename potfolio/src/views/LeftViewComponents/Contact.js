@@ -2,7 +2,6 @@ import React from 'react'
 import ButtonWrapper from '../../utility_components/ButtonWrapper'
 import { PortfolioConfig } from '../../PortfolioConfig'
 
-import '../../css/leftView.css'
 // import '../../css/mobile/leftViewMobile.css'
 
 const Contact = () => {

@@ -8,7 +8,6 @@ import Contact from './Contact'
 import { PortfolioConfig } from '../../PortfolioConfig'
 
 // Styles
-import '../../css/leftView.css'
 // import '../../css/mobile/leftViewMobile.css'
 
 class LeftView extends PureComponent {

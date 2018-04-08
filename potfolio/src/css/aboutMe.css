@@ -1,0 +1,8 @@
+.AboutMeContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.GreetingImageContainer {
+  width: 40%;
+}

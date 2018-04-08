@@ -1,18 +1,22 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 // Components
 import Main from './views/Main';
 
-// Styles
-import './css/main.css';
+const App = () => {
+  const { app } = styles 
+  return (
+    <div className="App" style={app}>
+      <Main />
+    </div>
+  );
+}
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <Main />
-      </div>
-    );
+// TODO: Move this somewhere else
+const styles = {
+  app: {
+    height: '100vh',
+    width: '100vw'
   }
 }
 

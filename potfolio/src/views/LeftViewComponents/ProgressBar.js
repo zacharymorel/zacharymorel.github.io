@@ -1,5 +1,4 @@
 import React from 'react'
-import '../../css/leftView.css'
 
 const ProgressBar = ({progress}) => {
   return (

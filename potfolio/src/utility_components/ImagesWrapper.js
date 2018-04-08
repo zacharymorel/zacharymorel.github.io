@@ -1,8 +1,8 @@
 import React from 'react'
 
-const ImagesWrapper = ({image}) => {
+const ImagesWrapper = ({image, styles}) => {
   return (
-    <img src={image} alt="Well..." className="ImageWrapper"></img>
+    <img className="ImageWrapper" alt="Well..." src={image} style={styles}></img>
   )
 }
 
