@@ -5,11 +5,11 @@ import ImagesWrapper from '../utility_components/ImagesWrapper'
 import { imageImport } from '../utility_functions/ImageImport'
 
 const GreetingImageContainer = () => {
-  const { EasterImage, IgniteTampa, ProfilePic } = styles
+  const { EasterImage, IgniteTampa, GreetingImageContainer, ProfilePic } = styles
   const images = imageImport(require.context('../images', false, /\.(png|jpe?g|svg)$/))
 
   return (
-    <div className='GreetingImageContainer'>
+    <div className='GreetingImageContainer' style={GreetingImageContainer}>
       <ImagesWrapper styles={EasterImage} image={images['Easter2018.jpg']} />
       <ImagesWrapper styles={IgniteTampa} image={images['IgniteTampa2017.jpg']} />
       <ImagesWrapper styles={ProfilePic} image={images['ProfilePic.jpeg']} />
@@ -18,6 +18,10 @@ const GreetingImageContainer = () => {
 }
 
 const styles = {
+  GreetingImageContainer: {
+    // height: '100%'
+    width: '40%'
+  },
   EasterImage: {
     height: 100,
     width: 100

@@ -16,6 +16,8 @@ const App = () => {
 const styles = {
   app: {
     height: '100vh',
+    display: 'flex',
+    flexFlow: 'row wrap',
     width: '100vw'
   }
 }

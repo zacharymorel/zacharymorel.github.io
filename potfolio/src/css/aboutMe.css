@@ -1,8 +1,12 @@
 .AboutMeContainer {
-  display: flex;
-  flex-direction: column;
+   display: flex;
+  flex-flow: row wrap;
+  height: 100%;
+  width: 100%;
 }
 
-.GreetingImageContainer {
-  width: 40%;
+.AboutMeContentContainer {
+  /* background: red; */
+  height: 100%;
+  width: 60%;
 }
