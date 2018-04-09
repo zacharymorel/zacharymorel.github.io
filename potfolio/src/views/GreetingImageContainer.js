@@ -5,8 +5,8 @@ import ImagesWrapper from '../utility_components/ImagesWrapper'
 import { imageImport } from '../utility_functions/ImageImport'
 
 const GreetingImageContainer = () => {
-  const { EasterImage, IgniteTampa, GreetingImageContainer, ProfilePic } = styles
   const images = imageImport(require.context('../images', false, /\.(png|jpe?g|svg)$/))
+  const { EasterImage, IgniteTampa, GreetingImageContainer, ProfilePic } = styles
 
   return (
     <div className='GreetingImageContainer' style={GreetingImageContainer}>

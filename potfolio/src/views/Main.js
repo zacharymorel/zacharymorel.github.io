@@ -20,6 +20,8 @@ const Main = () => {
 // TODO: Move this somewhere else
 const styles = {
   contentInfo: {
+    height: '100%',
+    // paddingTop: 2, 
     width: '60%'
   }
 }

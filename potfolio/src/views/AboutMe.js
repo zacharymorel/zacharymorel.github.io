@@ -1,17 +1,26 @@
 // Components
 import React from 'react'
+import ImagesWrapper from '../utility_components/ImagesWrapper'
 
+// functions
+import { imageImport } from '../utility_functions/ImageImport'
 // Styles
 import '../css/aboutMe.css'
 
 const AboutMe = () => {
-  const { PersonalInfo } = styles
+  const images = imageImport(require.context('../images', false, /\.(png|jpe?g|svg)$/))
+  const { PersonalInfo, TampaBayImage } = styles
+
+  // TODO: Look at the Flex Box styling Column and Row for AboutMeContainer,
+  //  I don't have it quite right
   return (
     <div className='AboutMeContainer'>
-      <div className='AboutMeContentContainer'>
+      <div className='AboutMePersonalInfo'>
         <p className='Text' style={PersonalInfo}><span className='Categories'>What I am:</span> Friendly Neighborhood Software Developer</p>
         <p className='Text' style={PersonalInfo}><span className='Categories'>Fact or two:</span> I am a passionate problem solver, nerd enthusiast, dad of three, lover of craft beer and recently, mad software developer. I’ve spent the last 5 years working as a craftsman with wood. I decided to make a career change and went to the Iron Yard immersive web development bootcamp in June 2017, I am currently a React/ React Native Developer for Avatar Nutrition.</p>
-        {/* Graph component will go here for pin point of TPA fla */}
+      </div>
+      <div className='AboutMeMap'>
+        <ImagesWrapper styles={TampaBayImage} image={images['TampaBay.png']} />
       </div>
     </div> 
   )
@@ -19,9 +28,12 @@ const AboutMe = () => {
 
 const styles = {
   PersonalInfo: {
-    marginTop: 5, 
+    marginTop: 15, 
     marginBottom: 5,
-    width: 500
+  },
+  TampaBayImage: {
+    height: '30%',
+    width: '30%'
   }
 }
 

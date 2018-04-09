@@ -13,6 +13,8 @@ class Header extends Component {
     }
   }
 
+  // TODO: Include Context API here? Send up url and teach it which components to show 
+  //       instead of using React Router since it's so small?
   toggleComponents = (params) => {
     if(params === 'Greetings') {
       if(this.props.determineContent !== params ) {
