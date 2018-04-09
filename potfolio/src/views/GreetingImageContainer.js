@@ -19,20 +19,20 @@ const GreetingImageContainer = () => {
 
 const styles = {
   GreetingImageContainer: {
-    // height: '100%'
+    height: '100%',
     width: '40%'
   },
   EasterImage: {
-    height: 100,
-    width: 100
+    height: '62%',
+    width: '98%'
   },
   IgniteTampa: {
-    height: 100,
-    width: 100
+    height: '36%',
+    width: '53%'
   },
   ProfilePic: {
-    height: 100,
-    width: 100
+    height: '36%',
+    width: '44%'
   },
 }
 

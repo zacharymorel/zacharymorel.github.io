@@ -9,10 +9,10 @@ const Main = () => {
   return (
     <Fragment>
       <GreetingImageContainer />
-        <section style={contentInfo}>
-          <Header />
-          <AboutMe />
-        </section>
+      <section style={contentInfo}>
+        <Header />
+        <AboutMe />
+      </section>
     </Fragment>
   )
 }

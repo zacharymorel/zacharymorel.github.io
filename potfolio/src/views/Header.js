@@ -37,7 +37,6 @@ class Header extends Component {
   render() {
     return (
       <header className='Header'>
-        <h1 className='HeaderTitle'>Zachary Morel.</h1>
         <div className='Navigation'>
           <ButtonWrapper 
             buttonClassName='HeaderButtons' 
@@ -61,6 +60,7 @@ class Header extends Component {
             <p className='Text'>Contact</p>
           </ButtonWrapper>
         </div>
+        <h1 className='HeaderTitle'>Zachary Morel.</h1>
       </header>
     )
   }
