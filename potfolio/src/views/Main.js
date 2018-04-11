@@ -3,16 +3,27 @@ import React, { Fragment } from 'react'
 import AboutMe from './AboutMe'
 import GreetingImageContainer from './GreetingImageContainer'
 import Header from './Header'
+import Work from './Work.js'
+import RouteState from './RouteState'
+
 
 const Main = () => {
   const { contentInfo } = styles
+  console.log(RouteState)
   return (
     <Fragment>
       <GreetingImageContainer />
-      <section style={contentInfo}>
-        <Header />
-        <AboutMe />
-      </section>
+      <RouteState>
+        <RouteState.Consumer>
+          {
+            value => 
+              <section style={contentInfo}>
+                <Header />
+                <AboutMe />
+              </section>
+          }
+        </RouteState.Consumer>
+      </RouteState>
     </Fragment>
   )
 }
