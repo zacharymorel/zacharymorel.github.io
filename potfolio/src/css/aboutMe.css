@@ -1,3 +1,16 @@
+
+/* The typing effect */
+@keyframes typing {
+from { width: 0 }
+to { width: 130px }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+from, to { border-color: transparent }
+50% { border-color: Black; }
+}
+
 .AboutMeContainer {
   display: flex;
   flex-flow: row wrap;
@@ -6,11 +19,33 @@
 }
 
 .AboutMePersonalInfo {
-  /* width: 100%; */
+  /* background: beige; */
+  height: 30%;
+  width: 100%;
 }
 
 .AboutMeMap {
-  align-items: flex-end;
+  /* background: cadetblue; */
+  display: flex; 
+  height: 70%;
+  justify-content: flex-end; 
+}
+
+.AboutMeHomeContainer {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
+  width: 100%;
+}
+
+#AboutMeHome:first-of-type {
+  animation: typing 1.6s steps(14, end),
+    blink-caret .75s step-end infinite;
+  border-right: .15em solid; /* The typwriter cursor */
+  color: #FCA311;
+  font-size: 30px;
+  height: 40px;
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 3px; /* Adjust as needed */
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  white-space: nowrap; /* Keeps the content on a single line */
 }

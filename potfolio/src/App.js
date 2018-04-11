@@ -17,7 +17,7 @@ const styles = {
   app: {
     height: '100vh',
     display: 'flex',
-    flexFlow: 'row wrap',
+    flexFlow: 'row',
     width: '100vw'
   }
 }

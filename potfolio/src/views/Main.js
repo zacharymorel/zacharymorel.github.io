@@ -21,7 +21,7 @@ const Main = () => {
 const styles = {
   contentInfo: {
     height: '100%',
-    // paddingTop: 2, 
+    padding: 5,
     width: '60%'
   }
 }
