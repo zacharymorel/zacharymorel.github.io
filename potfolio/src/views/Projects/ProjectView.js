@@ -1,17 +1,19 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 
 import ImagesWrapper from '../../utility_components/ImagesWrapper'
 import PortfolioConfig from '../../PortfolioConfig'
 import { imageImport } from '../../utility_functions/ImageImport'
+import '../../css/work.css'
 
-const ProjectView = ({image}) => {
+const ProjectView = ({ image }) => {
   const images = imageImport(require.context('../../images', false, /\.(png|jpe?g|svg)$/))
   const { projectImage } = styles
   
   return (
-    <Fragment>
+    <div className='ProjectViewContainer'>
       <ImagesWrapper styles={projectImage} image={images[image]}/>
-    </Fragment>
+      <p>FOOO</p>
+    </div>
   )
 }
 

@@ -5,13 +5,13 @@
   width: 100%;
 }
 
-.WorkImages {
-  background: palevioletred;
+.ProjectWrapperContainer {
+  display: flex;
   height: 100%;
-  width: 50%;
+  width: 100%;
 }
 
-.ProjectWrapperContainer {
+.ProjectViewContainer {
   display: flex;
   height: 100%;
   width: 100%;
