@@ -1,5 +1,6 @@
 import React from 'react'
 
+import CenterView from '../../utility_components/CenterViewWrapper'
 import ImagesWrapper from '../../utility_components/ImagesWrapper'
 import PortfolioConfig from '../../PortfolioConfig'
 import { imageImport } from '../../utility_functions/ImageImport'
@@ -11,8 +12,12 @@ const ProjectView = ({ image }) => {
   
   return (
     <div className='ProjectViewContainer'>
-      <ImagesWrapper styles={projectImage} image={images[image]}/>
-      <p>FOOO</p>
+      <CenterView>
+        <ImagesWrapper styles={projectImage} image={images[image]}/>
+      </CenterView>
+      <CenterView>
+        <p>FOOO</p>
+      </CenterView>
     </div>
   )
 }
