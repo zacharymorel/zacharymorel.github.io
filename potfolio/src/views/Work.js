@@ -2,7 +2,10 @@ import React from 'react'
 
 const Work = () => {
   return (
-    <p className='Text'>foo</p>
+    <div style={{backgroundColor: 'red', height: 40, width: 40}}>
+      <p className='Text'>foo</p>
+    </div>
+
   )
 }
 

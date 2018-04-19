@@ -16,16 +16,16 @@ from, to { border-color: transparent }
   flex-flow: row wrap;
   height: 95%;
   width: 100%;
+  padding: 5;
+  width: 60%;
 }
 
 .AboutMePersonalInfo {
-  /* background: beige; */
   height: 30%;
   width: 100%;
 }
 
 .AboutMeMap {
-  /* background: cadetblue; */
   display: flex; 
   height: 70%;
   justify-content: flex-end; 

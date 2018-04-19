@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 import ButtonWrapper from '../utility_components/ButtonWrapper'
 
 import '../css/header.css'
@@ -38,21 +39,21 @@ class Header extends Component {
 
   render() {
     return (
-      <header className='Header'>
+      <header className='Header' >
         <div className='Navigation'>
           <ButtonWrapper 
             buttonClassName='HeaderButtons' 
             onClick={() => this.toggleComponents('Greetings') } 
             styles={{ borderBottom: (this.state.activeButton === 'Greetings' && '1px solid #373940')}}
           >
-            <p className='Text'>Greetings</p>
+            <Link style={{color: '#373940', textDecoration: 'none'}} to='/'><p className='Text'>Greetings</p></Link>
           </ButtonWrapper>
           <ButtonWrapper 
             buttonClassName='HeaderButtons' 
             onClick={() => this.toggleComponents('Work') }
             styles={{ borderBottom: (this.state.activeButton === 'Work' && '1px solid #373940')}}
           >
-            <p className='Text'>Work</p>
+            <Link style={{color: '#373940', textDecoration: 'none'}} to='/work'><p className='Text'>Work</p></Link>
           </ButtonWrapper>
           <ButtonWrapper
             buttonClassName='HeaderButtons' 

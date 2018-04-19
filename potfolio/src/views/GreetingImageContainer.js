@@ -23,15 +23,15 @@ const styles = {
     width: '40%'
   },
   EasterImage: {
-    height: '62%',
+    height: '60%',
     width: '98%'
   },
   IgniteTampa: {
-    height: '36%',
+    height: '30%',
     width: '53%'
   },
   ProfilePic: {
-    height: '36%',
+    height: '30%',
     width: '44%'
   },
 }
