@@ -1,0 +1,18 @@
+.WorkContainer {
+  background-color: beige;
+  overflow: scroll;
+  height: 100%;
+  width: 100%;
+}
+
+.WorkImages {
+  background: palevioletred;
+  height: 100%;
+  width: 50%;
+}
+
+.ProjectWrapperContainer {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}

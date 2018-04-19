@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom'
 
 // Components
 import Main from './views/Main';
-import Work from './views/Work'
+import Work from './views/Projects/Work'
 import Header from './views/Header'
 
 const App = () => {
@@ -21,14 +21,12 @@ const App = () => {
   );
 }
 
-// TODO: Move this somewhere else
 const styles = {
   app: {
     height: '100vh',
     width: '100vw'
   },
   routerContainer: {
-    // backgroundColor: 'pink', 
     height: '95%', 
     width: '100%'
   }

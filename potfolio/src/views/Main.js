@@ -7,7 +7,7 @@ import GreetingImageContainer from './GreetingImageContainer'
 const Main = () => {
   const { mainContainer } = styles
   return (
-    <div style={ mainContainer }>
+    <div style={mainContainer}>
       <GreetingImageContainer />
       <AboutMe />
     </div>
@@ -21,5 +21,6 @@ const styles = {
     height: '100%'    
   },
 }
+
 
 export default Main
