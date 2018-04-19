@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom'
 
 // Components
 import Main from './views/Main';
-import Work from './views/Projects/Work'
+import Projects from './views/Projects/index'
 import Header from './views/Header'
 
 const App = () => {
@@ -14,7 +14,7 @@ const App = () => {
         <Header />
         <section style={routerContainer}>
           <Route exact path='/' component={Main}/>
-          <Route path='/work' component={Work}/>
+          <Route path='/projects' component={Projects}/>
         </section>
       </div>
     </Router>

@@ -1,14 +1,14 @@
 import React from 'react'
 import ProjectWrapper from './projectWrapper'
 import ProjectView from './ProjectView'
-import '../../css/work.css'
+import '../../css/projects.css'
 
 const projects = ['AvatarNutritionTracker', 'MotherNative']
 const projectImages = ['AvatarNutritionTracker.png', 'MotherNative.png']
 
-const Work = () => {
+const Projects = () => {
   return (
-    <div className='WorkContainer'>
+    <div className='ProjectsContainer'>
     {
       projects.map((project, index) => 
         <ProjectWrapper key={project}>
@@ -20,4 +20,4 @@ const Work = () => {
   )
 }
 
-export default Work
+export default Projects

@@ -1,7 +1,7 @@
 import React from 'react'
 
-import AboutMe from './AboutMe'
-import GreetingImageContainer from './GreetingImageContainer'
+import AboutMe from './Greetings/AboutMe'
+import GreetingImageContainer from './Greetings/GreetingImageContainer'
 
 
 const Main = () => {

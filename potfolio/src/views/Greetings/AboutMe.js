@@ -1,14 +1,14 @@
 // Components
 import React from 'react'
-import ImagesWrapper from '../utility_components/ImagesWrapper'
+import ImagesWrapper from '../../utility_components/ImagesWrapper'
 
 // functions
-import { imageImport } from '../utility_functions/ImageImport'
+import { imageImport } from '../../utility_functions/ImageImport'
 // Styles
-import '../css/aboutMe.css'
+import '../../css/aboutMe.css'
 
 const AboutMe = () => {
-  const images = imageImport(require.context('../images', false, /\.(png|jpe?g|svg)$/))
+  const images = imageImport(require.context('../../images', false, /\.(png|jpe?g|svg)$/))
   const { PersonalInfo, TampaBayImage } = styles
 
   return (

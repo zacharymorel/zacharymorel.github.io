@@ -1,11 +1,11 @@
 import React from 'react'
-import ImagesWrapper from '../utility_components/ImagesWrapper'
+import ImagesWrapper from '../../utility_components/ImagesWrapper'
 
 // functions
-import { imageImport } from '../utility_functions/ImageImport'
+import { imageImport } from '../../utility_functions/ImageImport'
 
 const GreetingImageContainer = () => {
-  const images = imageImport(require.context('../images', false, /\.(png|jpe?g|svg)$/))
+  const images = imageImport(require.context('../../images', false, /\.(png|jpe?g|svg)$/))
   const { EasterImage, IgniteTampa, GreetingImageContainer, ProfilePic } = styles
 
   return (

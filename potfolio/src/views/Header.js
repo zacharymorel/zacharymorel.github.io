@@ -24,7 +24,7 @@ class Header extends Component {
       }
     }
 
-    if(params === 'Work') {
+    if(params === 'Projects') {
       if(this.props.determineContent !== params ) {
         this.setState({ activeButton: params, showContactHeader: false }) 
         // this.props.headerDetermineContentCallBack(params)
@@ -50,10 +50,10 @@ class Header extends Component {
           </ButtonWrapper>
           <ButtonWrapper 
             buttonClassName='HeaderButtons' 
-            onClick={() => this.toggleComponents('Work') }
-            styles={{ borderBottom: (this.state.activeButton === 'Work' && '1px solid #373940')}}
+            onClick={() => this.toggleComponents('Projects') }
+            styles={{ borderBottom: (this.state.activeButton === 'Projects' && '1px solid #373940')}}
           >
-            <Link style={{color: '#373940', textDecoration: 'none'}} to='/work'><p className='Text'>Work</p></Link>
+            <Link style={{color: '#373940', textDecoration: 'none'}} to='/projects'><p className='Text'>Projects</p></Link>
           </ButtonWrapper>
           <ButtonWrapper
             buttonClassName='HeaderButtons' 
