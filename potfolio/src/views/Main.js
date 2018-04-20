@@ -16,6 +16,7 @@ const Main = () => {
 
 const styles = {
   mainContainer: {
+    backgroundColor: '#FCFCFC',
     display: 'flex', 
     flexFlow: 'flow',
     height: '100%'    

@@ -13,7 +13,9 @@ const styles = {
   centerChildren: {
     alignItems: 'center',
     display: 'flex',
+    height: '100%',
     justifyContent: 'center',
+    width: '100%',
   }
 }
 
