@@ -10,7 +10,7 @@ const projectImages = ['AvatarNutritionTracker.png', 'MotherNative.png']
 
 const Projects = () => {
   return (
-    <div className='ProjectsContainer'>
+    <div className='ProjectsContainer' style={{WebkitFilter: 'blur(12px)'}}>
     {
       projects.map((project, index) => 
         <ProjectWrapper key={project}>
