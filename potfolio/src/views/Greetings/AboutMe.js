@@ -14,7 +14,7 @@ const AboutMe = () => {
 
   return (
     <Fragment>
-      <AppProvider.Consumer>
+      {/* <AppProvider.Consumer> */}
         <div className='AboutMeContainer' >
           <div className='AboutMePersonalInfo'>
             <p className='Text' style={PersonalInfo}><span className='Categories'>What I am:</span> Friendly Neighborhood Software Developer</p>
@@ -23,19 +23,19 @@ const AboutMe = () => {
           <div className='AboutMeMap'>
             <div className='AboutMeHomeContainer'>
               <p id='AboutMeHome' className='Text' >H.O.M.E.</p>
-              {
+              {/*{
                 value => { 
                   console.log('VAL', value);
                   return (
                     <p>{value.showContactComponent}</p>
                   )
                 }
-              }
+              }*/}
             </div>
             <ImagesWrapper styles={TampaBayImage} image={images['TampaBay.png']} />
           </div>
         </div> 
-      </AppProvider.Consumer>
+      {/* </AppProvider.Consumer> */}
     </Fragment>
   )
 }

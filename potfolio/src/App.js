@@ -11,7 +11,7 @@ const App = () => {
   const { app, routerContainer } = styles 
   return (
     <Router>
-      <AppProvider>
+      {/* <AppProvider> */}
         <div className="App" style={app}>
           <Header />
           <section style={routerContainer}>
@@ -19,7 +19,7 @@ const App = () => {
             <Route path='/projects' component={Projects}/>
           </section>
         </div>
-      </AppProvider>
+      {/* </AppProvider> */}
     </Router>
   );
 }
