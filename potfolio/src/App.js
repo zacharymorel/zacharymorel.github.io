@@ -11,7 +11,7 @@ const App = () => {
   const { app, routerContainer } = styles 
   return (
     <Router>
-      {/* <AppProvider> */}
+      <AppProvider>
         <div className="App" style={app}>
           <Header />
           <section style={routerContainer}>
@@ -19,10 +19,12 @@ const App = () => {
             <Route path='/projects' component={Projects}/>
           </section>
         </div>
-      {/* </AppProvider> */}
+      </AppProvider>
     </Router>
   );
 }
+
+//https://www.google.com/search?q=how+to+get+react+Context+api+to+work+with+React-router%3F&oq=how+to+get+react+Context+api+to+work+with+React-router%3F&aqs=chrome..69i57.27948j1j1&sourceid=chrome&ie=UTF-8
 
 const styles = {
   app: {

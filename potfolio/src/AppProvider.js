@@ -4,12 +4,13 @@ import Context from './Context'
 
 class AppProvider extends Component {
   state = {
-    // showContactComponent: false
-    showContactComponent: 'FOOOF'
+    showContactComponent: false,
+    toggleContactComponent: (e) =>  this.toggleContactComponent(e)
   }
 
+  toggleContactComponent = (e) => ( this.setState({showContactComponent: !this.state.showContactComponent}) )
+
   render() {
-    console.log(Context)
     return (
       <Context.Provider value={this.state}>
         {this.props.children}
