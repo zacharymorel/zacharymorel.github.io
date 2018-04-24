@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
-import ButtonWrapper from '../utility_components/ButtonWrapper'
-import PortfolioConfig from '../PortfolioConfig'
-import '../css/contact.css'
-import '../css/header.css'
+import ButtonWrapper from '../../utility_components/ButtonWrapper'
+import PortfolioConfig from '../../PortfolioConfig'
+import './contact.css'
+import '../header/header.css'
 
 class Contact extends Component {
 

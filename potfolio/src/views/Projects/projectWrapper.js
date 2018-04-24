@@ -1,5 +1,5 @@
 import React from 'react'
-import '../../css/projects.css'
+import './projects.css'
 
 const ProjectWrapper = ({ children }) => {
   return (

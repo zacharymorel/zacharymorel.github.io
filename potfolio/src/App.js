@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom'
 import AppProvider from './AppProvider'
 import Main from './views/Main';
 import Projects from './views/Projects/index'
-import Header from './views/Header'
+import Header from './views/header/Header'
 
 const App = () => {
   const { app, routerContainer } = styles 

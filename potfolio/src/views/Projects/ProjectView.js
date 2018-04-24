@@ -4,7 +4,7 @@ import ButtonWrapper from '../../utility_components/ButtonWrapper'
 import CenterView from '../../utility_components/CenterViewWrapper'
 import ImagesWrapper from '../../utility_components/ImagesWrapper'
 import { imageImport } from '../../utility_functions/ImageImport'
-import '../../css/projects.css'
+import './projects.css'
 
 class ProjectView extends Component  {
   images = imageImport(require.context('../../images', false, /\.(png|jpe?g|svg)$/))

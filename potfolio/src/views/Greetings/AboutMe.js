@@ -6,7 +6,7 @@ import AppProvider from '../../AppProvider'
 // functions
 import { imageImport } from '../../utility_functions/ImageImport'
 // Styles
-import '../../css/aboutMe.css'
+import './aboutMe.css'
 
 const AboutMe = () => {
   const images = imageImport(require.context('../../images', false, /\.(png|jpe?g|svg)$/))

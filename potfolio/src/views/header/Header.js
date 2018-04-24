@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
-import Contact from './Contact'
-import ButtonWrapper from '../utility_components/ButtonWrapper'
+import Contact from '../Contact/Contact'
+import ButtonWrapper from '../../utility_components/ButtonWrapper'
 
-import '../css/header.css'
+import './header.css'
 
 class Header extends Component {
   constructor(props) {

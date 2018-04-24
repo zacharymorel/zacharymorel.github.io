@@ -1,6 +1,6 @@
 import React from 'react'
 
-import '../css/utilityComponents.css'
+import './utilityComponents.css'
 
 const ImagesWrapper = ({image, styles}) => {
   return (

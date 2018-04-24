@@ -3,7 +3,7 @@ import ProjectWrapper from './projectWrapper'
 import ProjectView from './ProjectView'
 import PortfolioConfig from '../../PortfolioConfig'
 
-import '../../css/projects.css'
+import './projects.css'
 
 const projects = ['AvatarNutritionTracker', 'MotherNative']
 const projectImages = ['AvatarNutritionTracker.png', 'MotherNative.png']
