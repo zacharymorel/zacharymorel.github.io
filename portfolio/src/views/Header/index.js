@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import Context from '../../Context'
-import Contact from '../Contact/Contact'
+import Contact from '../Contact'
 import ButtonWrapper from '../../utilityComponents/ButtonWrapper'
 
 import './header.css'
@@ -66,7 +66,7 @@ class Header extends Component {
             
             {this.state.showContactHeader && <Contact />} 
           </header>
-          // TODO: Fix the Contact Issues when navigating between routes which the blue will accdently get toggled improperly 
+          // TODO: Fix the Contact Issues when navigating between routes which the blur will accdently get toggled improperly 
         }
       </Context.Consumer>
     )

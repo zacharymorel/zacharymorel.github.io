@@ -1,7 +1,7 @@
 import React from 'react'
-import Context from '../Context'
-import AboutMe from './Greetings/AboutMe'
-import GreetingImageContainer from './Greetings/GreetingImageContainer'
+import Context from '../../Context'
+import AboutMe from './AboutMe'
+import GreetingImageContainer from './GreetingImageContainer'
 
 
 const Main = () => {
