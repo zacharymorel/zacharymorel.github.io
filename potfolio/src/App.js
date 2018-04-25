@@ -21,7 +21,7 @@ const App = () => {
         </div>
       </AppProvider>
     </Router>
-  );
+  )
 }
 
 //https://www.google.com/search?q=how+to+get+react+Context+api+to+work+with+React-router%3F&oq=how+to+get+react+Context+api+to+work+with+React-router%3F&aqs=chrome..69i57.27948j1j1&sourceid=chrome&ie=UTF-8
@@ -37,4 +37,4 @@ const styles = {
   }
 }
 
-export default App;
+export default App

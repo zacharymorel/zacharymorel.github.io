@@ -60,8 +60,8 @@ class Header extends Component {
           </ButtonWrapper>
         </div>
         <h1 className='HeaderTitle'>Zachary Morel.</h1>
-        {/* THIS IS WHERE I AM GOING TO SHOW CONTACT INFO DYNAMICALLY */}
-        {/* this.state.showContactHeader && <Contact /> */}
+
+        {this.state.showContactHeader && <Contact />} 
       </header>
     )
   }

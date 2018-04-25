@@ -1,3 +1,11 @@
 .ContactParent {
-  
+  background: #fff;
+  display: flex;
+  align-items: center;
+  height: 5%;
+  padding: 20px;
+  position: absolute;
+  top: 60px;
+  width: 100%;
+  z-index: 4;
 }

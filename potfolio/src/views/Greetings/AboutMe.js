@@ -1,7 +1,6 @@
 // Components
 import React, { Fragment } from 'react'
 import ImagesWrapper from '../../utility_components/ImagesWrapper'
-import AppProvider from '../../AppProvider'
 
 // functions
 import { imageImport } from '../../utility_functions/ImageImport'
