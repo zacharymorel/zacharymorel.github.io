@@ -1,9 +1,13 @@
 {
-  "main.css": "static/css/main.9c359434.css",
-  "main.css.map": "static/css/main.9c359434.css.map",
-  "main.js": "static/js/main.56fd22e7.js",
-  "main.js.map": "static/js/main.56fd22e7.js.map",
+  "main.css": "static/css/main.838cee1e.css",
+  "main.css.map": "static/css/main.838cee1e.css.map",
+  "main.js": "static/js/main.cc57104c.js",
+  "main.js.map": "static/js/main.cc57104c.js.map",
   "static/media/AvatarNutritionTracker.png": "static/media/AvatarNutritionTracker.ca430113.png",
+  "static/media/Easter2018.jpg": "static/media/Easter2018.ad04b0b6.jpg",
+  "static/media/IgniteTampa2017.jpg": "static/media/IgniteTampa2017.68b9d584.jpg",
   "static/media/MotherNative.png": "static/media/MotherNative.95e6404f.png",
-  "static/media/ProfilePic.jpeg": "static/media/ProfilePic.35b7ad86.jpeg"
+  "static/media/ProfilePic.jpeg": "static/media/ProfilePic.35b7ad86.jpeg",
+  "static/media/TampaBay.png": "static/media/TampaBay.aedb5019.png",
+  "static/media/logo.svg": "static/media/logo.5d5d9eef.svg"
 }
