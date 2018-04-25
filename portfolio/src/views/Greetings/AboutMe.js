@@ -17,12 +17,13 @@ const AboutMe = () => {
         <p className='Text' style={PersonalInfo}><span className='Categories'>What I am:</span> Friendly Neighborhood Software Developer</p>
         <p className='Text' style={PersonalInfo}><span className='Categories'>Fact or two:</span> I am a passionate problem solver, nerd enthusiast, dad of three, lover of craft beer and recently, mad software developer. I’ve spent the last 5 years working as a craftsman with wood. I decided to make a career change and went to the Iron Yard immersive web development bootcamp in June 2017, I am currently a React/ React Native Developer for Avatar Nutrition.</p>
       </div>
-      <div className='AboutMeMap'>
-        <div className='AboutMeHomeContainer'>
-          <p id='AboutMeHome' className='Text' >H.O.M.E.</p>
-        </div>
-        {/*<ImagesWrapper styles={TampaBayImage} image={images['TampaBay.png']} />*/}
+      <div className='AboutMeHomeContainer'>
+        <p id='AboutMeFervent' className='Text'>FERVENT</p>
+        <p id='AboutMeBuilder' className='Text'>BUILDER</p>
+        <p id='AboutMeMaker' className='Text'>MAKER</p>
+        <p id='AboutMeWords' className='Text'>WORDS</p>
       </div>
+        {/*<ImagesWrapper styles={TampaBayImage} image={images['TampaBay.png']} />*/}
     </div> 
   )
 }

@@ -25,19 +25,13 @@ from, to { border-color: transparent }
   width: 100%;
 }
 
-.AboutMeMap {
-  display: flex; 
-  height: 70%;
-  justify-content: flex-end; 
-}
-
 .AboutMeHomeContainer {
   display: flex;
-  justify-content: center;
+  flex-direction: row;
   width: 100%;
 }
 
-#AboutMeHome:first-of-type {
+#AboutMeFervent {
   animation: typing 1.6s steps(14, end),
     blink-caret .75s step-end infinite;
   border-right: .15em solid; /* The typwriter cursor */
@@ -48,4 +42,49 @@ from, to { border-color: transparent }
   letter-spacing: 3px; /* Adjust as needed */
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   white-space: nowrap; /* Keeps the content on a single line */
+  /* width: 100%; */
+}
+
+#AboutMeBuilder {
+  animation: typing 1.6s steps(14, end),
+    blink-caret .75s step-end infinite;
+  border-right: .15em solid; /* The typwriter cursor */
+  color: #FCA311;
+  font-size: 30px;
+  height: 40px;
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 3px; /* Adjust as needed */
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  white-space: nowrap; /* Keeps the content on a single line */
+  /* width: 100%; */
+}
+
+#AboutMeMaker {
+  /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+  animation: typing 1.6s steps(14, end),
+    blink-caret .75s step-end infinite;
+  border-right: .15em solid; /* The typwriter cursor */
+  color: #FCA311;
+  font-size: 30px;
+  height: 40px;
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 3px; /* Adjust as needed */
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  white-space: nowrap; /* Keeps the content on a single line */
+  /* width: 100%; */
+}
+
+#AboutMeWords {
+  /* TODO: LEFT OFF AT TRYING TO GET THE DELAY TO WORK AND TO GET THESE GUYS ALL ALIGN ON THE LEFT */
+  animation: typing 1.6s 4s steps(14, end), 
+    blink-caret .75s step-end infinite;
+  border-right: .15em solid; /* The typwriter cursor */
+  color: #FCA311;
+  font-size: 30px;
+  height: 40px;
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 3px; /* Adjust as needed */
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  white-space: nowrap; /* Keeps the content on a single line */
+  /* width: 100%; */
 }
