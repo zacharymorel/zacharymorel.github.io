@@ -1,0 +1,15 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+}
+
+h1, p, span {
+  font-family: Geneva, Verdana, sans-serif
+}
+
+.Text {
+  font-size: 18px;
+  padding: 0;
+  margin: 0;
+}
