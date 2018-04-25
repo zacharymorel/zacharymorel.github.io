@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import ButtonWrapper from '../../utility_components/ButtonWrapper'
+import ButtonWrapper from '../../utilityComponents/ButtonWrapper'
 import PortfolioConfig from '../../PortfolioConfig'
 import './contact.css'
 import '../header/header.css'

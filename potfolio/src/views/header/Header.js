@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import Context from '../../Context'
 import Contact from '../Contact/Contact'
-import ButtonWrapper from '../../utility_components/ButtonWrapper'
+import ButtonWrapper from '../../utilityComponents/ButtonWrapper'
 
 import './header.css'
 

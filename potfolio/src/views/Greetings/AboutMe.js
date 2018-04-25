@@ -1,9 +1,9 @@
 // Components
 import React from 'react'
-import ImagesWrapper from '../../utility_components/ImagesWrapper'
+import ImagesWrapper from '../../utilityComponents/ImagesWrapper'
 
 // functions
-import { imageImport } from '../../utility_functions/ImageImport'
+import { imageImport } from '../../utilityFunctions/ImageImport'
 // Styles
 import './aboutMe.css'
 

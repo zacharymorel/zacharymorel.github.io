@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 import Context from '../../Context'
-import ButtonWrapper from '../../utility_components/ButtonWrapper'
-import CenterView from '../../utility_components/CenterViewWrapper'
-import ImagesWrapper from '../../utility_components/ImagesWrapper'
-import { imageImport } from '../../utility_functions/ImageImport'
+import ButtonWrapper from '../../utilityComponents/ButtonWrapper'
+import CenterView from '../../utilityComponents/CenterViewWrapper'
+import ImagesWrapper from '../../utilityComponents/ImagesWrapper'
+import { imageImport } from '../../utilityFunctions/ImageImport'
 import './projects.css'
 
 class ProjectView extends Component  {
