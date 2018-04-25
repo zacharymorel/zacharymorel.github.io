@@ -21,11 +21,17 @@ const AboutMe = () => {
         <div className='AboutMeHomeContainer'>
           <p id='AboutMeHome' className='Text' >H.O.M.E.</p>
         </div>
-        <ImagesWrapper styles={TampaBayImage} image={images['TampaBay.png']} />
+        {/*<ImagesWrapper styles={TampaBayImage} image={images['TampaBay.png']} />*/}
       </div>
     </div> 
   )
 }
+
+// TODO: ADD some different text and align it so the text happens one after the other down in a line 
+// Fervent 
+// Builder
+// Maker
+// Words
 
 const styles = {
   PersonalInfo: {

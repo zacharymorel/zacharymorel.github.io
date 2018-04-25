@@ -11,11 +11,13 @@ const GreetingImageContainer = () => {
   return (
     <div className='GreetingImageContainer' style={GreetingImageContainer}>
       <ImagesWrapper styles={EasterImage} image={images['Easter2018.jpg']} />
-      <ImagesWrapper styles={IgniteTampa} image={images['IgniteTampa2017.jpg']} />
-      <ImagesWrapper styles={ProfilePic} image={images['ProfilePic.jpeg']} />
+      {/*<ImagesWrapper styles={IgniteTampa} image={images['IgniteTampa2017.jpg']} />
+      <ImagesWrapper styles={ProfilePic} image={images['ProfilePic.jpeg']} />*/}
     </div>
   )
 }
+
+// What to do with all this new space??
 
 const styles = {
   GreetingImageContainer: {
@@ -23,7 +25,7 @@ const styles = {
     width: '40%'
   },
   EasterImage: {
-    height: '60%',
+    height: '70%',
     width: '98%'
   },
   IgniteTampa: {
