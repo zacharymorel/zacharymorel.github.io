@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-
+import Context from '../../Context'
 import ButtonWrapper from '../../utility_components/ButtonWrapper'
 import CenterView from '../../utility_components/CenterViewWrapper'
 import ImagesWrapper from '../../utility_components/ImagesWrapper'
@@ -17,33 +17,37 @@ class ProjectView extends Component  {
     const { projectDescription, projectImage, projectTitle } = styles
 
     return (
-      <div className='ProjectViewContainer'>
-        <CenterView>
-          <ImagesWrapper styles={projectImage} image={this.images[this.image]}/>
-        </CenterView>
-        <CenterView>
-          <section className='ProjectDescriptionWrapper'>
-            <div className='ProjectDescriptionContainer'>
-              <p className='Text' style={projectTitle}>{this.projectDisplayInfo.projectName}</p>
-              <p className='Text' style={projectDescription}>{this.projectDisplayInfo.description}</p>
-            </div>
-            <div className='ProjectButtonsContainer'>
-              <ButtonWrapper 
-                buttonClassName='ProjectButtons'
-                onClick={this.handleOpenWebLink(this.projectDisplayInfo.projectLink1)}
-              >
-                <p className='Text'>{this.projectDisplayInfo.contentText1}</p>
-              </ButtonWrapper>
-              <ButtonWrapper 
-                buttonClassName='ProjectButtons'
-                onClick={this.handleOpenWebLink(this.projectDisplayInfo.projectLink2)}
-              >
-                <p className='Text'>{this.projectDisplayInfo.contentText2}</p>
-              </ButtonWrapper>
-            </div>
-          </section>
-        </CenterView>
-      </div>
+      <Context.Consumer>
+      { value => 
+        <div className='ProjectViewContainer' style={{ WebkitFilter: (value.showContactComponent) && 'blur(8px)' }}>
+          <CenterView>
+            <ImagesWrapper styles={projectImage} image={this.images[this.image]}/>
+          </CenterView>
+          <CenterView>
+            <section className='ProjectDescriptionWrapper'>
+              <div className='ProjectDescriptionContainer'>
+                <p className='Text' style={projectTitle}>{this.projectDisplayInfo.projectName}</p>
+                <p className='Text' style={projectDescription}>{this.projectDisplayInfo.description}</p>
+              </div>
+              <div className='ProjectButtonsContainer'>
+                <ButtonWrapper 
+                  buttonClassName='ProjectButtons'
+                  onClick={this.handleOpenWebLink(this.projectDisplayInfo.projectLink1)}
+                >
+                  <p className='Text'>{this.projectDisplayInfo.contentText1}</p>
+                </ButtonWrapper>
+                <ButtonWrapper 
+                  buttonClassName='ProjectButtons'
+                  onClick={this.handleOpenWebLink(this.projectDisplayInfo.projectLink2)}
+                >
+                  <p className='Text'>{this.projectDisplayInfo.contentText2}</p>
+                </ButtonWrapper>
+              </div>
+            </section>
+          </CenterView>
+        </div>
+      }
+      </Context.Consumer>
     )
   }
 }

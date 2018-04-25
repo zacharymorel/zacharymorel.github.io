@@ -1,5 +1,5 @@
 import React from 'react'
-
+import Context from '../Context'
 import AboutMe from './Greetings/AboutMe'
 import GreetingImageContainer from './Greetings/GreetingImageContainer'
 
@@ -7,10 +7,14 @@ import GreetingImageContainer from './Greetings/GreetingImageContainer'
 const Main = () => {
   const { mainContainer } = styles
   return (
-    <div style={mainContainer}>
-      <GreetingImageContainer />
-      <AboutMe />
-    </div>
+    <Context.Consumer>
+    { value => 
+      <div style={Object.assign({WebkitFilter: (value.showContactComponent) && 'blur(8px)'}, mainContainer)} >
+        <GreetingImageContainer />
+        <AboutMe />
+      </div>
+    }
+    </Context.Consumer>
   )
 }
 
