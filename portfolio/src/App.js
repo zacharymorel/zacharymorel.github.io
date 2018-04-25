@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom'
 
 // Components
 import AppProvider from './AppProvider'
-import Main from './views/Main';
+import Greeting from './views/Greetings';
 import Projects from './views/Projects/index'
 import Header from './views/header/Header'
 
@@ -15,7 +15,7 @@ const App = () => {
         <div className="App" style={app}>
           <Header />
           <section style={routerContainer}>
-            <Route exact path='/' component={Main}/>
+            <Route exact path='/' component={Greeting}/>
             <Route path='/projects' component={Projects}/>
           </section>
         </div>
